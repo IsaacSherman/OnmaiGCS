@@ -1,0 +1,354 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "cf866467-4d9b-4384-9b2e-2a71e3526ca8",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "c6ad4487-fcf8-4788-b08c-1a27897aab26",
+			"based_on_id": "93b54189-edcb-4132-be5d-6a761e3710ad",
+			"based_on_hash": "pZdYizMQRrV4L7P4NG31fJ+Lkcz0YhNanBT9KmDgpQI",
+			"name": "Attribute Modifiers",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "69f3f6ef-e2dd-40bc-847b-6b7c5c4ceef8",
+					"based_on_id": "e6a7bb93-40b3-465c-b70b-a9f8f5cd5b3b",
+					"based_on_hash": "YgJDJtlK4qvnBaOxP8uM4dC+ax+gu+3bXQYAn75heG8",
+					"name": "HT+1",
+					"physical": true,
+					"base_points": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "ht"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "02d2ac62-1406-4f47-939e-cd08c8b3cbfa",
+					"based_on_id": "537c34d5-d3d0-4bd1-ab7f-f1bf1f384df1",
+					"based_on_hash": "GSsF3ob5fBbCpNmmAeKum8BbL3wKUYO6a9V2PW6nZxE",
+					"name": "IQ+2",
+					"physical": true,
+					"base_points": 40,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 2,
+							"attribute": "iq"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "eecea5e5-acba-4b9f-9051-2234c7cbb1de",
+					"based_on_id": "cf3363b9-eacc-404c-84c4-8ca11d224684",
+					"based_on_hash": "Zkw5CHpsqTHIsU7a6cwpP5Ms1XYCAtQKpVGZvNzlbTk",
+					"name": "ST+1",
+					"physical": true,
+					"base_points": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "st"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "4ae2686c-c464-4fbd-ba0e-d36802802707",
+			"based_on_id": "f137c028-5807-4682-8be6-f94cb1b97f49",
+			"based_on_hash": "137ppAG7yw+SAZaip+xpzq5kqVPh9QC/zUD5/cpqzWc",
+			"name": "Regeneration",
+			"physical": true,
+			"exotic": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "b6cd3629-e141-42bc-811a-202eb40f0b2a",
+					"based_on_id": "d0b0db02-4faa-4c06-b975-8e6d8758d4de",
+					"based_on_hash": "TdlZ2yv27NOj52NPR3qnfTqTmLBUPjDsCpa/ADU7c4c",
+					"name": "Slow",
+					"reference": "B80",
+					"cost_type": "points",
+					"cost": 10,
+					"affects": "total",
+					"notes": "You recover 1 HP per 12 hours"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "f4dd84ec-3811-4c68-b333-8cd39f387389",
+					"based_on_id": "f7019672-657e-4745-9024-32957390ba0f",
+					"based_on_hash": "fpay+cT2An96bhpvqM3gQUN7E3aTcU7Bn940I09L8sY",
+					"disabled": true,
+					"name": "Regular",
+					"reference": "B80",
+					"cost_type": "points",
+					"cost": 25,
+					"affects": "total",
+					"notes": "You recover 1 HP per hour"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "4dd185e4-8333-45f1-9783-5b74b2945780",
+					"based_on_id": "e49c4e86-9726-4c17-ad0f-9f83d592cf34",
+					"based_on_hash": "9oHrkxOxJ3QFNRH4xI5j3nEBShiiZ7+y10C6hsCPZZE",
+					"disabled": true,
+					"name": "Fast",
+					"reference": "B80",
+					"cost_type": "points",
+					"cost": 50,
+					"affects": "total",
+					"notes": "You recover 1 HP per minute"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "db56129d-8a9e-4bad-9459-6d289426c8a0",
+					"based_on_id": "a5677e23-5559-43af-8f9f-acc7bc29448c",
+					"based_on_hash": "4QPs9EqlXvBHEwdBNTnLoVdVeKT/d61KR0fpRrdfZ0k",
+					"disabled": true,
+					"name": "Very Fast",
+					"reference": "B80",
+					"cost_type": "points",
+					"cost": 100,
+					"affects": "total",
+					"notes": "You recover 1 HP per second"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "a601940d-bb60-44c8-bb94-9a2616edae3b",
+					"based_on_id": "b344cb94-9fee-49f2-84b7-f66cc834ad1e",
+					"based_on_hash": "NZ9c9BOgg+nimNe2PjqaSrBJXCpRa+khVqZHIpyeUjE",
+					"disabled": true,
+					"name": "Extreme",
+					"reference": "B80",
+					"cost_type": "points",
+					"cost": 150,
+					"affects": "total",
+					"notes": "You recover 10 HP per second"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "dbd4df84-0060-477e-8fd2-e14e7b671f4f",
+					"based_on_id": "4c0506de-7b21-4f77-aed1-81fb0d20b134",
+					"based_on_hash": "1oCD5xntaseyX3KtR46XGofmS5cU5opEW9ANehwB2ic",
+					"disabled": true,
+					"name": "Heals Radiation",
+					"reference": "B80",
+					"cost_type": "percentage",
+					"cost": 40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e4ba3607-6921-4fb0-bbf6-6348ccc209f7",
+					"based_on_id": "ae4e082b-a17d-4206-bcb9-671fe499cd0a",
+					"based_on_hash": "H5NrF4tnWCjBtvpOViPjjEApshrj6YWcBNU8IVl3I9E",
+					"disabled": true,
+					"name": "Radiation Only",
+					"reference": "B80",
+					"cost_type": "percentage",
+					"cost": -60,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "0c4806c0-d524-467b-8291-85019759575d",
+					"based_on_id": "60104514-de15-4757-8af2-b675f7f3b916",
+					"based_on_hash": "nffA6wk8yUjvAy6NX0GT/WNBj/enimhcZcJuqjJorA0",
+					"disabled": true,
+					"name": "Fatigue Recovery",
+					"reference": "P70",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "569f01b7-3e68-426c-aa1f-d3d8d7a97d7d",
+					"based_on_id": "d9efc77a-5dc4-4ff4-96e6-41450f3d7fab",
+					"based_on_hash": "yv0M7ojNi4J+5Jo/XDn6izrj1l7bQofSUnC7n5Wso2U",
+					"disabled": true,
+					"name": "Fatigue Only",
+					"reference": "P70",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e6cc7718-0580-46b4-b3a4-de6269f7a268",
+					"based_on_id": "5abbf429-f443-4e09-a981-019b0b6443ff",
+					"based_on_hash": "8JanAgGWNSDXXMPsfsnZxM44SDw71d9+KowwKqh6IrI",
+					"disabled": true,
+					"name": "Limited: @Advantage@ Only",
+					"reference": "P70",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "2d862a6a-f134-4668-8153-b5f8abd6321d",
+					"based_on_id": "9ee97946-1fd7-4600-9c40-2105a6197cb5",
+					"based_on_hash": "QDfBf2Xwj+8oU/8x08bXinIQQC6fCKj8cU/6RObnkZg",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H18",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total",
+					"notes": "@Common or Very Common@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "cf9d8a57-505b-4f61-9693-25d36329b251",
+					"based_on_id": "1133aaa6-7723-4a05-a932-3e48935f12c1",
+					"based_on_hash": "kcV7s2uto/w95S90yoGcmM/y8+pdI/xv9t3VeAQaJ3Q",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H18",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total",
+					"notes": "@Occasional@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "07a67613-162d-4b37-9361-579401a41500",
+					"based_on_id": "084f63e5-5c96-473a-bf4a-5a2321f5b372",
+					"based_on_hash": "Fe6HctIs3EUc5QsV78SEeJTFcQMgVNv7f/jjvVduGeA",
+					"disabled": true,
+					"name": "Bane",
+					"reference": "H18",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "@Rare@"
+				}
+			],
+			"reference": "B80",
+			"notes": "Can be bought up to Regular prior to play, or post play with the proper alchemical treatment.",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "2b7b329f-85a6-4cce-acdd-ae68ef36e881",
+			"based_on_id": "f1c48acc-051e-429c-b3d4-4c5f5be91970",
+			"based_on_hash": "2annmHGgUpJuZQJRSbj1rGLAWwvT0BrPYs1yRiqZpyA",
+			"name": "Sense of Duty",
+			"mental": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "05b84040-4fbf-49fb-9649-4785276bdb98",
+					"based_on_id": "71c17b6a-ee1e-4481-b0fd-d17a73486657",
+					"based_on_hash": "+KIksbCqm0Va97PCTEMtjO91LJ0L1GgtEgoDa8zGkXo",
+					"disabled": true,
+					"name": "Friends and Companions",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "fb02f536-078a-40da-93d6-1c801c6a1c77",
+					"based_on_id": "61a6234a-679b-4913-9d8b-99f1eaab6a7e",
+					"based_on_hash": "XTX5AxNSMCsdN2XBZ4HUdZykZB82E0J6wzjZQnizSyw",
+					"disabled": true,
+					"name": "@Small Group@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "9e8cd1e9-5693-4c6c-899d-2b1075ec5aed",
+					"based_on_id": "e68d6ced-fc56-41c7-8013-4277e84e658e",
+					"based_on_hash": "+4k0jzdo+Cfmd/WKF9OpG2UGa8flLPKwWyMKSF9ZQgc",
+					"disabled": true,
+					"name": "@Individual@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -2,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "8374b8bb-fb6d-4f39-a77e-633da5264e0c",
+					"based_on_id": "7c80d1e4-a5fa-4499-9cba-61853b1ef215",
+					"based_on_hash": "1Ya/uF/UFUOxDtAd5nOeODhyV2y6SoYqE8lx6CRGwlE",
+					"disabled": true,
+					"name": "@Large Group@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "0d1b96e5-51d5-418a-aeb5-babdc6a3451d",
+					"based_on_id": "c579464c-7f1e-4d68-a6e8-350897abe2d6",
+					"based_on_hash": "1RByN2yeP2rC3J+sPYCbBEYHO4M22d5rfAze9vcTs1w",
+					"name": "All Sapient Life",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "f3513942-2c1e-46c6-a2c9-8ad549a52878",
+					"based_on_id": "4e6ae7f0-0d58-416a-9102-67f006e89903",
+					"based_on_hash": "hqvSioU/5MK5Qby5Yla/tE1diIJIR7wShFtNnTCQGps",
+					"disabled": true,
+					"name": "Every Living Being",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				}
+			],
+			"reference": "B153",
+			"categories": [
+				"Disadvantage"
+			]
+		}
+	]
+}
