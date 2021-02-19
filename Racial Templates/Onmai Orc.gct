@@ -518,7 +518,7 @@
 			"version": 1,
 			"id": "93b54189-edcb-4132-be5d-6a761e3710ad",
 			"name": "Attribute Modifiers",
-			"open": false,
+			"open": true,
 			"children": [
 				{
 					"type": "advantage",
@@ -541,11 +541,13 @@
 					"id": "e6a7bb93-40b3-465c-b70b-a9f8f5cd5b3b",
 					"name": "HT",
 					"physical": true,
-					"base_points": 20,
+					"levels": "2",
+					"points_per_level": 10,
 					"features": [
 						{
 							"type": "attribute_bonus",
-							"amount": 2,
+							"amount": 1,
+							"per_level": true,
 							"attribute": "ht"
 						}
 					]
@@ -556,11 +558,13 @@
 					"id": "537c34d5-d3d0-4bd1-ab7f-f1bf1f384df1",
 					"name": "IQ",
 					"physical": true,
-					"base_points": 20,
+					"levels": "1",
+					"points_per_level": 20,
 					"features": [
 						{
 							"type": "attribute_bonus",
 							"amount": 1,
+							"per_level": true,
 							"attribute": "iq"
 						}
 					]
@@ -571,11 +575,13 @@
 					"id": "cf3363b9-eacc-404c-84c4-8ca11d224684",
 					"name": "ST",
 					"physical": true,
-					"base_points": 30,
+					"levels": "3",
+					"points_per_level": 10,
 					"features": [
 						{
 							"type": "attribute_bonus",
-							"amount": 3,
+							"amount": 1,
+							"per_level": true,
 							"attribute": "st"
 						}
 					]
