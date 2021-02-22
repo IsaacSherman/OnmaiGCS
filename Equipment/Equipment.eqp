@@ -6,6 +6,949 @@
 		{
 			"type": "equipment",
 			"version": 1,
+			"id": "680b07b5-0395-4644-9e30-642ad309aac2",
+			"based_on_id": "f1ee3ef0-7f95-4500-b545-78aa499f1d59",
+			"based_on_hash": "o0PFeEOuTaUDzt1qRACqqgn1kRbWqmPzhVThoePpMWc",
+			"quantity": 1,
+			"description": "Bone-Studded Monster Leather Skirt",
+			"tech_level": "1",
+			"value": "90",
+			"weight": "60 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "groin"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "legs"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "2a18013b-381a-4ab5-b8d7-6c591550f3bb",
+			"based_on_id": "42962275-3e29-4ff2-b456-14f509045e0c",
+			"based_on_hash": "S1eRtc9eiaVuEQacw92jF9UQs+OASw6CpK5BWKykZ0Q",
+			"quantity": 1,
+			"description": "Large Bone Knife",
+			"tech_level": "0",
+			"value": "60",
+			"weight": "1.5 lb",
+			"reference": "B272",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "+1"
+					},
+					"strength": "6",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "5",
+					"usage": "Thrown",
+					"accuracy": "+0",
+					"range": "x0.5/x1",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-1",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "eae1dd6e-5c50-4f5e-8a2d-4b5f52bc4360",
+			"based_on_id": "84b24820-ffec-4e27-9d24-9bf1841cd712",
+			"based_on_hash": "Bcx/XJwr3l9sqtykIO5KlNompgoqcXFkhovEc+6VYo8",
+			"quantity": 1,
+			"description": "Light Monster Carapace Armor",
+			"tech_level": "2",
+			"value": "225",
+			"weight": "22.5 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 9,
+					"location": "torso"
+				}
+			],
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "0f009a07-9ba7-42fd-98ce-2ba86350ad30",
+			"based_on_id": "61adda9f-0e5d-4b9f-850c-10af2bd8de70",
+			"based_on_hash": "Ox/3EPTN4oOOlPXItUJhwtMbtiiCMKhK096VIPbf5Io",
+			"quantity": 1,
+			"description": "Light Monster Leather Gloves",
+			"tech_level": "1",
+			"value": "45",
+			"ignore_weight_for_skills": true,
+			"weight": "1 lb",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 4,
+					"location": "hands"
+				}
+			],
+			"notes": "Lighter to allow some dexterity",
+			"categories": [
+				"Gloves"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "e4932eb4-9601-4439-8217-b901ff98c343",
+			"based_on_id": "45f62c17-563d-44fd-89b6-ebf101a622bc",
+			"based_on_hash": "VnM9vzbqhXH3dqf9dkhHTpbKJXO6JkmLeS1/hNkXYSk",
+			"quantity": 1,
+			"description": "Light Monster Leather Leggings",
+			"tech_level": "1",
+			"value": "75",
+			"weight": "6 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 4,
+					"location": "legs"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "9b1290a4-78f9-46f7-bb83-096546786c3a",
+			"based_on_id": "a761b2e6-2181-478b-a212-6bb41f7d5fa6",
+			"based_on_hash": "S5dXIlAIl3Hf67bq4/8f4+QadpBn1LdB7CC+++5Hxx0",
+			"quantity": 1,
+			"description": "Light Monster Leather Pants",
+			"tech_level": "1",
+			"value": "90",
+			"weight": "7.5 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 4,
+					"location": "groin"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 4,
+					"location": "legs"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "db1d7f2a-2adf-4fd4-bb35-e11944fc1322",
+			"based_on_id": "937a2a7a-76b4-4937-8949-7e1248afe3fe",
+			"based_on_hash": "mKj0jLNqfYzI2Y78XPPXnPNSrTeBJgOnlN/50wQ43JA",
+			"quantity": 1,
+			"description": "Monster Carapace Armor",
+			"tech_level": "2",
+			"value": "630",
+			"weight": "52.5 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 12,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 12,
+					"location": "groin"
+				}
+			],
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "be0cb8b6-2ab1-4b92-9c52-d7bdff044a5e",
+			"based_on_id": "f1ab1686-327b-42b5-9393-8b94d33cdc63",
+			"based_on_hash": "9rSp0lc6qWgz4jr9ba2vlV5a92qMbTj4V7WQasHNK8U",
+			"quantity": 1,
+			"description": "Monster Carapace Leggings",
+			"tech_level": "2",
+			"legality_class": "3",
+			"value": "375",
+			"weight": "31.5 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 12,
+					"location": "legs"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "85dd8115-eb0e-47d4-8c93-8586cedeb768",
+			"based_on_id": "101460c5-21a0-46ae-90e9-3fb586f56e57",
+			"based_on_hash": "qwGeJxMoNDNNWEAK/SQ3Eb9qOzVBZTZVAycChsBDyOQ",
+			"quantity": 1,
+			"description": "Monster Carapace Sleeves",
+			"tech_level": "2",
+			"legality_class": "3",
+			"value": "315",
+			"weight": "21 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 12,
+					"location": "arms"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "019fafa1-9230-4678-88ac-5b3953d0c5ff",
+			"based_on_id": "adb76193-a473-4869-bf41-8b59186700bb",
+			"based_on_hash": "7sOgFm36RUcuAREQsxMDqB/AfwnolRHb2H8ljSLhaUA",
+			"quantity": 1,
+			"description": "Monster Leather Armor",
+			"tech_level": "1",
+			"value": "150",
+			"weight": "15 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "groin"
+				}
+			],
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "f9b82dde-ae7d-410a-bfc3-dd5172b7312e",
+			"based_on_id": "61adda9f-0e5d-4b9f-850c-10af2bd8de70",
+			"based_on_hash": "Ox/3EPTN4oOOlPXItUJhwtMbtiiCMKhK096VIPbf5Io",
+			"quantity": 1,
+			"description": "Monster Leather Gloves",
+			"tech_level": "1",
+			"value": "80",
+			"weight": "2 lb",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "hands"
+				},
+				{
+					"type": "skill_bonus",
+					"amount": -1,
+					"selection_type": "skills_with_name",
+					"category": {
+						"compare": "is",
+						"qualifier": "Weapon"
+					}
+				}
+			],
+			"notes": "Penalty to manual dexterity when using.",
+			"categories": [
+				"Gloves"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "f2951080-1300-4385-afbc-f562e9e78d75",
+			"based_on_id": "c59c7612-9b24-48ea-930c-1dc1a1561f37",
+			"based_on_hash": "JR8lDQrs9I1EB7txXEAt2McrbQQXRuUZrfrbGhHn9bE",
+			"quantity": 1,
+			"description": "Monster Leather Helm",
+			"tech_level": "1",
+			"value": "30",
+			"weight": "0.75 lb",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "skull"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "face"
+				}
+			],
+			"categories": [
+				"Headgear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "05ae192b-1aa3-44f6-af83-c73013a8e6ca",
+			"based_on_id": "d9004e6a-a9d3-4157-9593-514a7490f757",
+			"based_on_hash": "dXiqsYbd88UO4Sxgs8jmp6yhClt6gJNCWjIfrCg5pFE",
+			"quantity": 1,
+			"description": "Monster Leather Jacket",
+			"tech_level": "1",
+			"value": "75",
+			"weight": "6 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 4,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 4,
+					"location": "arms"
+				}
+			],
+			"notes": "Can be worn over normal clothing",
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "1ad44cd2-7578-4334-a6c0-e93553dffeb4",
+			"based_on_id": "9db42bcf-abb3-4f0c-8d87-34afee1f4337",
+			"based_on_hash": "xlDQB4SG6qTXz6ymdojAW9DxQt8J0CuhvNVRIoPIgoc",
+			"quantity": 1,
+			"description": "Monster Leather Leggings",
+			"tech_level": "1",
+			"value": "90",
+			"weight": "6 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "legs"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "798ad43f-2fd3-4067-8a10-ef78e4a48332",
+			"based_on_id": "d63ed2a8-bb6f-48fc-85d9-a153f9d4f209",
+			"based_on_hash": "aqNE1a/GYKaIKzxroCGUOobEDARV3tSGE5yV393VjSQ",
+			"quantity": 1,
+			"description": "Monster Leather Skullcap",
+			"tech_level": "1",
+			"value": "48",
+			"weight": "1 lb",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "skull"
+				}
+			],
+			"categories": [
+				"Headgear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "1e819132-02e1-4c5f-99a4-74114f96b78c",
+			"based_on_id": "6267ead4-b298-497c-90b1-cd670c620ec9",
+			"based_on_hash": "lvW8V45kHfpLvDYE4zNPjSp8He1YVAHe7Jk4RuU0vfc",
+			"quantity": 1,
+			"description": "Monster Leather Sleeves",
+			"tech_level": "1",
+			"value": "75",
+			"weight": "3 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 6,
+					"location": "arms"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "e8867356-1a24-4b43-8619-042160dafed3",
+			"based_on_id": "14318a1b-4d94-47d6-9dc1-0fe1fb178d57",
+			"based_on_hash": "qTn/9G2NYvNoXyebkdivSNZWiBXp1JQYegh//lMvidY",
+			"quantity": 1,
+			"description": "Rhitsilk Armor",
+			"tech_level": "4",
+			"value": "60",
+			"weight": "6 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "groin"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "torso"
+				}
+			],
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "a9bfa347-ed8a-461b-b745-52359654f6e4",
+			"based_on_id": "e3a60a6d-7400-4e96-ab98-8fb2a3fa93c5",
+			"based_on_hash": "wxezMWIUX4GtZXyEDInGznTXTAwUlp0T/ih8oeTwG/M",
+			"quantity": 1,
+			"description": "Rhitsilk Gloves",
+			"tech_level": "1",
+			"value": "30",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "hands"
+				}
+			],
+			"categories": [
+				"Gloves"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "05722349-eabb-4613-a6e9-2efef972994f",
+			"based_on_id": "bda95d6c-50e5-451e-b714-a451558a56a5",
+			"based_on_hash": "a4WFiCHBTVabC2QGLSJFTdj6RYd8Zq08rbCp8Ux41xI",
+			"quantity": 1,
+			"description": "Rhitsilk Headwrap",
+			"tech_level": "1",
+			"value": "20",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "skull"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "neck"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "face"
+				}
+			],
+			"categories": [
+				"Headgear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "660002f8-bc7c-4e33-ad55-f0a87870d13d",
+			"based_on_id": "50e8e714-f995-42f4-956d-b5d8392bb7cb",
+			"based_on_hash": "efmxhG4YmbC3QsGQo7Cu8lmtsVaiLcmZ6GbJIhrfQ2I",
+			"quantity": 1,
+			"description": "Rhitsilk Heavy Cloak",
+			"tech_level": "1",
+			"value": "75",
+			"weight": "2 lb",
+			"reference": "B287",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "Block",
+							"name": "Cloak"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "Special"
+					},
+					"strength": "8",
+					"usage": "Thrown",
+					"accuracy": "+1",
+					"range": "2",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-6",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Cloak"
+						},
+						{
+							"type": "Skill",
+							"name": "Net",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"modifier": -4
+						},
+						{
+							"type": "DX",
+							"modifier": -5
+						}
+					]
+				}
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "block"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "torso"
+				}
+			],
+			"categories": [
+				"Clothing"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "c369d98d-cdd0-45ac-a7a9-daeeb8e5435b",
+			"based_on_id": "570a1bff-0ee8-479b-9203-d2307323df68",
+			"based_on_hash": "jQ/cu4FWVo3nchZlfUI5uhO+3OrMHFH5OxEA5CruxvQ",
+			"quantity": 1,
+			"description": "Rhitsilk Light Cloak",
+			"tech_level": "1",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "B287",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "-"
+					},
+					"strength": "-",
+					"reach": "-",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "Block",
+							"name": "Cloak"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "Special"
+					},
+					"strength": "5",
+					"usage": "Thrown",
+					"accuracy": "+1",
+					"range": "2",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-4",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Cloak"
+						},
+						{
+							"type": "Skill",
+							"name": "Net",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "block"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "torso"
+				}
+			],
+			"categories": [
+				"Clothing"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "030fb644-5193-4fc8-86a9-16276dbe4c13",
+			"based_on_id": "51f5dcef-648b-4e6f-91c7-f566999b7ba0",
+			"based_on_hash": "sSTrKAN/0dcWSHboBaqHmESpU//S8yOt5Jtycnq0N+E",
+			"quantity": 1,
+			"description": "Rhitsilk Shoes",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "2 lb",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "feet"
+				}
+			],
+			"notes": "Flexible; Concealable",
+			"categories": [
+				"Footwear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "2788870b-d537-41f2-9663-b3eee0203bbf",
+			"based_on_id": "6fd9bfa8-c88a-4c2a-b9ef-1fe9ce91a098",
+			"based_on_hash": "xqy0Ah1OITxD+ykm0OHayymn7ZvFJD+d1xelFOdS7ok",
+			"quantity": 1,
+			"description": "Rhitsilk Sleeves",
+			"tech_level": "1",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "arms"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "d433f618-6bb4-414f-80db-c0914d933f6b",
+			"based_on_id": "5b161a07-ec13-47ca-8da5-c8da7be604f5",
+			"based_on_hash": "u8GbTusVCysS+wHQ2m7s7yot97RPHMmra+MiLv7jSss",
+			"quantity": 1,
+			"description": "Rhitsilk Trousers",
+			"tech_level": "1",
+			"value": "45",
+			"weight": "1 lb",
+			"reference": "B283",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 3,
+					"location": "legs"
+				}
+			],
+			"categories": [
+				"Limb Armor"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "614997cd-c8ae-44e9-8065-8250e75e63fd",
+			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
+			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
+			"quantity": 1,
+			"description": "Sewelli Black Council",
+			"tech_level": "1",
+			"value": "6400",
+			"weight": "0.004 lb",
+			"reference": "B264",
+			"categories": [
+				"Money"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "be626543-8dcc-4b1d-a099-09375c1d329a",
+			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
+			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
+			"quantity": 1,
+			"description": "Sewelli Copper Loaf",
+			"tech_level": "1",
+			"value": "1",
+			"weight": "0.008 lb",
+			"reference": "B264",
+			"categories": [
+				"Money"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "66c28cd5-bf3d-4ee5-8a88-074066c5159d",
+			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
+			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
+			"quantity": 1,
+			"description": "Sewelli Electrum Clipper",
+			"tech_level": "1",
+			"value": "40",
+			"weight": "0.004 lb",
+			"reference": "B264",
+			"categories": [
+				"Money"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "f4b734c3-c5f9-4c98-a97c-4338c94f0bda",
+			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
+			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
+			"quantity": 1,
+			"description": "Sewelli Golden Craftsman",
+			"tech_level": "1",
+			"value": "160",
+			"weight": "0.004 lb",
+			"reference": "B264",
+			"categories": [
+				"Money"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "ca231b9c-9d39-4a10-a03a-b63c916343f5",
+			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
+			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
+			"quantity": 1,
+			"description": "Sewelli Platinum Magus",
+			"tech_level": "1",
+			"value": "640",
+			"weight": "0.004 lb",
+			"reference": "B264",
+			"categories": [
+				"Money"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "c25c1670-2371-44e7-a8a3-12e3d9e9c9e1",
+			"based_on_id": "3fe86696-d4bf-497a-8db0-6d3611139cd7",
+			"based_on_hash": "ibKKSKi5XmqTQiOKWWItfD+ux1Nj2ngnKzNiqCJ18K0",
+			"quantity": 1,
+			"description": "Sewelli Silver Well",
+			"tech_level": "1",
+			"value": "4",
+			"weight": "0.004 lb",
+			"reference": "B264",
+			"categories": [
+				"Money"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
 			"id": "7235c021-faaa-44d3-ab71-64d2438dc416",
 			"based_on_id": "42962275-3e29-4ff2-b456-14f509045e0c",
 			"based_on_hash": "S1eRtc9eiaVuEQacw92jF9UQs+OASw6CpK5BWKykZ0Q",
@@ -133,102 +1076,6 @@
 		{
 			"type": "equipment",
 			"version": 1,
-			"id": "c25c1670-2371-44e7-a8a3-12e3d9e9c9e1",
-			"based_on_id": "3fe86696-d4bf-497a-8db0-6d3611139cd7",
-			"based_on_hash": "ibKKSKi5XmqTQiOKWWItfD+ux1Nj2ngnKzNiqCJ18K0",
-			"quantity": 1,
-			"description": "Sewelli Silver Well",
-			"tech_level": "1",
-			"value": "4",
-			"weight": "0.004 lb",
-			"reference": "B264",
-			"categories": [
-				"Money"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "ca231b9c-9d39-4a10-a03a-b63c916343f5",
-			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
-			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
-			"quantity": 1,
-			"description": "Sewelli Platinum Magus",
-			"tech_level": "1",
-			"value": "640",
-			"weight": "0.004 lb",
-			"reference": "B264",
-			"categories": [
-				"Money"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "f4b734c3-c5f9-4c98-a97c-4338c94f0bda",
-			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
-			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
-			"quantity": 1,
-			"description": "Sewelli Golden Craftsman",
-			"tech_level": "1",
-			"value": "160",
-			"weight": "0.004 lb",
-			"reference": "B264",
-			"categories": [
-				"Money"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "66c28cd5-bf3d-4ee5-8a88-074066c5159d",
-			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
-			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
-			"quantity": 1,
-			"description": "Sewelli Electrum Clipper",
-			"tech_level": "1",
-			"value": "40",
-			"weight": "0.004 lb",
-			"reference": "B264",
-			"categories": [
-				"Money"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "be626543-8dcc-4b1d-a099-09375c1d329a",
-			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
-			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
-			"quantity": 1,
-			"description": "Sewelli Copper Loaf",
-			"tech_level": "1",
-			"value": "1",
-			"weight": "0.008 lb",
-			"reference": "B264",
-			"categories": [
-				"Money"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "614997cd-c8ae-44e9-8065-8250e75e63fd",
-			"based_on_id": "e69c98de-c51f-4293-8425-4cb569122aac",
-			"based_on_hash": "vny78mOhxxAnlrNVfaGcut+/M3FiOOcTjX8e/zpHHZ4",
-			"quantity": 1,
-			"description": "Sewelli Black Council",
-			"tech_level": "1",
-			"value": "6400",
-			"weight": "0.004 lb",
-			"reference": "B264",
-			"categories": [
-				"Money"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
 			"id": "26dac156-27e9-40e1-b367-19d89851dc34",
 			"based_on_id": "945b83ab-9dfb-4e64-bb9a-8bb8fcd1b8da",
 			"based_on_hash": "+3sQRzoWAy6PsB+ffiu4JmNbRr4EUEWPqBis4IakFr4",
@@ -282,101 +1129,6 @@
 						{
 							"type": "Skill",
 							"name": "Titan Bane Battleaxe"
-						}
-					]
-				}
-			],
-			"categories": [
-				"Melee Weapon",
-				"Titan Bane Arms"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "01d7398d-7666-4564-af57-cbf7dee305c3",
-			"based_on_id": "a80507f2-f16e-4299-98ee-3cdb1bb2a00c",
-			"based_on_hash": "w2NHlIV07+UxtzeeePOHJmkCD0/uQMfjiU5WR9AAg48",
-			"quantity": 1,
-			"description": "Titan Bane Sawhook",
-			"tech_level": "3",
-			"value": "240",
-			"weight": "8 lb",
-			"reference": "B272",
-			"weapons": [
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "imp",
-						"st": "sw",
-						"base": "+4"
-					},
-					"strength": "11‡",
-					"usage": "Swung (May get stuck)",
-					"reach": "2,3*",
-					"parry": "0U",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "DX",
-							"modifier": -5
-						},
-						{
-							"type": "Skill",
-							"name": "Titan Bane Sawhook"
-						},
-						{
-							"type": "Skill",
-							"name": "Spear",
-							"modifier": -4
-						},
-						{
-							"type": "Skill",
-							"name": "Staff",
-							"modifier": -4
-						},
-						{
-							"type": "Skill",
-							"name": "Two-Handed Axe/Mace",
-							"modifier": -4
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cut",
-						"st": "sw",
-						"base": "+5"
-					},
-					"strength": "11",
-					"usage": "Swung",
-					"reach": "2,3*",
-					"parry": "0U",
-					"block": "No",
-					"defaults": [
-						{
-							"type": "DX",
-							"modifier": -5
-						},
-						{
-							"type": "Skill",
-							"name": "Polearm"
-						},
-						{
-							"type": "Skill",
-							"name": "Spear",
-							"modifier": -4
-						},
-						{
-							"type": "Skill",
-							"name": "Staff",
-							"modifier": -4
-						},
-						{
-							"type": "Skill",
-							"name": "Two-Handed Axe/Mace",
-							"modifier": -4
 						}
 					]
 				}
@@ -548,848 +1300,280 @@
 		{
 			"type": "equipment",
 			"version": 1,
-			"id": "d433f618-6bb4-414f-80db-c0914d933f6b",
-			"based_on_id": "5b161a07-ec13-47ca-8da5-c8da7be604f5",
-			"based_on_hash": "u8GbTusVCysS+wHQ2m7s7yot97RPHMmra+MiLv7jSss",
+			"id": "01d7398d-7666-4564-af57-cbf7dee305c3",
+			"based_on_id": "a80507f2-f16e-4299-98ee-3cdb1bb2a00c",
+			"based_on_hash": "w2NHlIV07+UxtzeeePOHJmkCD0/uQMfjiU5WR9AAg48",
 			"quantity": 1,
-			"description": "Rhitsilk Trousers",
-			"tech_level": "1",
-			"value": "45",
-			"weight": "1 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "legs"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "2788870b-d537-41f2-9663-b3eee0203bbf",
-			"based_on_id": "6fd9bfa8-c88a-4c2a-b9ef-1fe9ce91a098",
-			"based_on_hash": "xqy0Ah1OITxD+ykm0OHayymn7ZvFJD+d1xelFOdS7ok",
-			"quantity": 1,
-			"description": "Rhitsilk Sleeves",
-			"tech_level": "1",
-			"value": "40",
-			"weight": "1 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "arms"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "030fb644-5193-4fc8-86a9-16276dbe4c13",
-			"based_on_id": "51f5dcef-648b-4e6f-91c7-f566999b7ba0",
-			"based_on_hash": "sSTrKAN/0dcWSHboBaqHmESpU//S8yOt5Jtycnq0N+E",
-			"quantity": 1,
-			"description": "Rhitsilk Shoes",
-			"tech_level": "1",
-			"value": "60",
-			"weight": "2 lb",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "feet"
-				}
-			],
-			"notes": "Flexible; Concealable",
-			"categories": [
-				"Footwear"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "c369d98d-cdd0-45ac-a7a9-daeeb8e5435b",
-			"based_on_id": "570a1bff-0ee8-479b-9203-d2307323df68",
-			"based_on_hash": "jQ/cu4FWVo3nchZlfUI5uhO+3OrMHFH5OxEA5CruxvQ",
-			"quantity": 1,
-			"description": "Rhitsilk Light Cloak",
-			"tech_level": "1",
-			"value": "40",
-			"weight": "1 lb",
-			"reference": "B287",
-			"weapons": [
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "-"
-					},
-					"strength": "-",
-					"reach": "-",
-					"parry": "No",
-					"block": "+0",
-					"defaults": [
-						{
-							"type": "Block",
-							"name": "Cloak"
-						}
-					]
-				},
-				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "Special"
-					},
-					"strength": "5",
-					"usage": "Thrown",
-					"accuracy": "+1",
-					"range": "2",
-					"rate_of_fire": "1",
-					"shots": "T(1)",
-					"bulk": "-4",
-					"defaults": [
-						{
-							"type": "DX",
-							"modifier": -5
-						},
-						{
-							"type": "Skill",
-							"name": "Cloak"
-						},
-						{
-							"type": "Skill",
-							"name": "Net",
-							"modifier": -4
-						},
-						{
-							"type": "Skill",
-							"name": "Shield",
-							"modifier": -4
-						}
-					]
-				}
-			],
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "dodge"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "parry"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "block"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 1,
-					"location": "torso"
-				}
-			],
-			"categories": [
-				"Clothing"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "660002f8-bc7c-4e33-ad55-f0a87870d13d",
-			"based_on_id": "50e8e714-f995-42f4-956d-b5d8392bb7cb",
-			"based_on_hash": "efmxhG4YmbC3QsGQo7Cu8lmtsVaiLcmZ6GbJIhrfQ2I",
-			"quantity": 1,
-			"description": "Rhitsilk Heavy Cloak",
-			"tech_level": "1",
-			"value": "75",
-			"weight": "2 lb",
-			"reference": "B287",
-			"weapons": [
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "-"
-					},
-					"strength": "-",
-					"reach": "-",
-					"parry": "No",
-					"block": "+0",
-					"defaults": [
-						{
-							"type": "Block",
-							"name": "Cloak"
-						}
-					]
-				},
-				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "Special"
-					},
-					"strength": "8",
-					"usage": "Thrown",
-					"accuracy": "+1",
-					"range": "2",
-					"rate_of_fire": "1",
-					"shots": "T(1)",
-					"bulk": "-6",
-					"defaults": [
-						{
-							"type": "Skill",
-							"name": "Cloak"
-						},
-						{
-							"type": "Skill",
-							"name": "Net",
-							"modifier": -4
-						},
-						{
-							"type": "Skill",
-							"name": "Shield",
-							"modifier": -4
-						},
-						{
-							"type": "DX",
-							"modifier": -5
-						}
-					]
-				}
-			],
-			"features": [
-				{
-					"type": "attribute_bonus",
-					"amount": 2,
-					"attribute": "dodge"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 2,
-					"attribute": "parry"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 2,
-					"attribute": "block"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "torso"
-				}
-			],
-			"categories": [
-				"Clothing"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "05722349-eabb-4613-a6e9-2efef972994f",
-			"based_on_id": "bda95d6c-50e5-451e-b714-a451558a56a5",
-			"based_on_hash": "a4WFiCHBTVabC2QGLSJFTdj6RYd8Zq08rbCp8Ux41xI",
-			"quantity": 1,
-			"description": "Rhitsilk Headwrap",
-			"tech_level": "1",
-			"value": "20",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "skull"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "neck"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "face"
-				}
-			],
-			"categories": [
-				"Headgear"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "a9bfa347-ed8a-461b-b745-52359654f6e4",
-			"based_on_id": "e3a60a6d-7400-4e96-ab98-8fb2a3fa93c5",
-			"based_on_hash": "wxezMWIUX4GtZXyEDInGznTXTAwUlp0T/ih8oeTwG/M",
-			"quantity": 1,
-			"description": "Rhitsilk Gloves",
-			"tech_level": "1",
-			"value": "30",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "hands"
-				}
-			],
-			"categories": [
-				"Gloves"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "e8867356-1a24-4b43-8619-042160dafed3",
-			"based_on_id": "14318a1b-4d94-47d6-9dc1-0fe1fb178d57",
-			"based_on_hash": "qTn/9G2NYvNoXyebkdivSNZWiBXp1JQYegh//lMvidY",
-			"quantity": 1,
-			"description": "Rhitsilk Armor",
-			"tech_level": "4",
-			"value": "60",
-			"weight": "6 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "groin"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 3,
-					"location": "torso"
-				}
-			],
-			"categories": [
-				"Body Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "1e819132-02e1-4c5f-99a4-74114f96b78c",
-			"based_on_id": "6267ead4-b298-497c-90b1-cd670c620ec9",
-			"based_on_hash": "lvW8V45kHfpLvDYE4zNPjSp8He1YVAHe7Jk4RuU0vfc",
-			"quantity": 1,
-			"description": "Monster Leather Sleeves",
-			"tech_level": "1",
-			"value": "75",
-			"weight": "3 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "arms"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "798ad43f-2fd3-4067-8a10-ef78e4a48332",
-			"based_on_id": "d63ed2a8-bb6f-48fc-85d9-a153f9d4f209",
-			"based_on_hash": "aqNE1a/GYKaIKzxroCGUOobEDARV3tSGE5yV393VjSQ",
-			"quantity": 1,
-			"description": "Monster Leather Skullcap",
-			"tech_level": "1",
-			"value": "48",
-			"weight": "1 lb",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "skull"
-				}
-			],
-			"categories": [
-				"Headgear"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "1ad44cd2-7578-4334-a6c0-e93553dffeb4",
-			"based_on_id": "9db42bcf-abb3-4f0c-8d87-34afee1f4337",
-			"based_on_hash": "xlDQB4SG6qTXz6ymdojAW9DxQt8J0CuhvNVRIoPIgoc",
-			"quantity": 1,
-			"description": "Monster Leather Leggings",
-			"tech_level": "1",
-			"value": "90",
-			"weight": "6 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "legs"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "05ae192b-1aa3-44f6-af83-c73013a8e6ca",
-			"based_on_id": "d9004e6a-a9d3-4157-9593-514a7490f757",
-			"based_on_hash": "dXiqsYbd88UO4Sxgs8jmp6yhClt6gJNCWjIfrCg5pFE",
-			"quantity": 1,
-			"description": "Monster Leather Jacket",
-			"tech_level": "1",
-			"value": "75",
-			"weight": "6 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 4,
-					"location": "torso"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 4,
-					"location": "arms"
-				}
-			],
-			"notes": "Can be worn over normal clothing",
-			"categories": [
-				"Body Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "f2951080-1300-4385-afbc-f562e9e78d75",
-			"based_on_id": "c59c7612-9b24-48ea-930c-1dc1a1561f37",
-			"based_on_hash": "JR8lDQrs9I1EB7txXEAt2McrbQQXRuUZrfrbGhHn9bE",
-			"quantity": 1,
-			"description": "Monster Leather Helm",
-			"tech_level": "1",
-			"value": "30",
-			"weight": "0.75 lb",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "skull"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "face"
-				}
-			],
-			"categories": [
-				"Headgear"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "f9b82dde-ae7d-410a-bfc3-dd5172b7312e",
-			"based_on_id": "61adda9f-0e5d-4b9f-850c-10af2bd8de70",
-			"based_on_hash": "Ox/3EPTN4oOOlPXItUJhwtMbtiiCMKhK096VIPbf5Io",
-			"quantity": 1,
-			"description": "Monster Leather Gloves",
-			"tech_level": "1",
-			"value": "80",
-			"weight": "2 lb",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "hands"
-				},
-				{
-					"type": "skill_bonus",
-					"amount": -1,
-					"selection_type": "skills_with_name",
-					"category": {
-						"compare": "is",
-						"qualifier": "Weapon"
-					}
-				}
-			],
-			"notes": "Penalty to manual dexterity when using.",
-			"categories": [
-				"Gloves"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "019fafa1-9230-4678-88ac-5b3953d0c5ff",
-			"based_on_id": "adb76193-a473-4869-bf41-8b59186700bb",
-			"based_on_hash": "7sOgFm36RUcuAREQsxMDqB/AfwnolRHb2H8ljSLhaUA",
-			"quantity": 1,
-			"description": "Monster Leather Armor",
-			"tech_level": "1",
-			"value": "150",
-			"weight": "15 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "torso"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "groin"
-				}
-			],
-			"categories": [
-				"Body Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "85dd8115-eb0e-47d4-8c93-8586cedeb768",
-			"based_on_id": "101460c5-21a0-46ae-90e9-3fb586f56e57",
-			"based_on_hash": "qwGeJxMoNDNNWEAK/SQ3Eb9qOzVBZTZVAycChsBDyOQ",
-			"quantity": 1,
-			"description": "Monster Carapace Sleeves",
-			"tech_level": "2",
-			"legality_class": "3",
-			"value": "315",
-			"weight": "21 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 12,
-					"location": "arms"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "be0cb8b6-2ab1-4b92-9c52-d7bdff044a5e",
-			"based_on_id": "f1ab1686-327b-42b5-9393-8b94d33cdc63",
-			"based_on_hash": "9rSp0lc6qWgz4jr9ba2vlV5a92qMbTj4V7WQasHNK8U",
-			"quantity": 1,
-			"description": "Monster Carapace Leggings",
-			"tech_level": "2",
-			"legality_class": "3",
-			"value": "375",
-			"weight": "31.5 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 12,
-					"location": "legs"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "db1d7f2a-2adf-4fd4-bb35-e11944fc1322",
-			"based_on_id": "937a2a7a-76b4-4937-8949-7e1248afe3fe",
-			"based_on_hash": "mKj0jLNqfYzI2Y78XPPXnPNSrTeBJgOnlN/50wQ43JA",
-			"quantity": 1,
-			"description": "Monster Carapace Armor",
-			"tech_level": "2",
-			"value": "630",
-			"weight": "52.5 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 12,
-					"location": "torso"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 12,
-					"location": "groin"
-				}
-			],
-			"categories": [
-				"Body Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "9b1290a4-78f9-46f7-bb83-096546786c3a",
-			"based_on_id": "a761b2e6-2181-478b-a212-6bb41f7d5fa6",
-			"based_on_hash": "S5dXIlAIl3Hf67bq4/8f4+QadpBn1LdB7CC+++5Hxx0",
-			"quantity": 1,
-			"description": "Light Monster Leather Pants",
-			"tech_level": "1",
-			"value": "90",
-			"weight": "7.5 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 4,
-					"location": "groin"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 4,
-					"location": "legs"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "e4932eb4-9601-4439-8217-b901ff98c343",
-			"based_on_id": "45f62c17-563d-44fd-89b6-ebf101a622bc",
-			"based_on_hash": "VnM9vzbqhXH3dqf9dkhHTpbKJXO6JkmLeS1/hNkXYSk",
-			"quantity": 1,
-			"description": "Light Monster Leather Leggings",
-			"tech_level": "1",
-			"value": "75",
-			"weight": "6 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 4,
-					"location": "legs"
-				}
-			],
-			"categories": [
-				"Limb Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "0f009a07-9ba7-42fd-98ce-2ba86350ad30",
-			"based_on_id": "61adda9f-0e5d-4b9f-850c-10af2bd8de70",
-			"based_on_hash": "Ox/3EPTN4oOOlPXItUJhwtMbtiiCMKhK096VIPbf5Io",
-			"quantity": 1,
-			"description": "Light Monster Leather Gloves",
-			"tech_level": "1",
-			"value": "45",
-			"ignore_weight_for_skills": true,
-			"weight": "1 lb",
-			"reference": "B284",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 4,
-					"location": "hands"
-				}
-			],
-			"notes": "Lighter to allow some dexterity",
-			"categories": [
-				"Gloves"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "eae1dd6e-5c50-4f5e-8a2d-4b5f52bc4360",
-			"based_on_id": "84b24820-ffec-4e27-9d24-9bf1841cd712",
-			"based_on_hash": "Bcx/XJwr3l9sqtykIO5KlNompgoqcXFkhovEc+6VYo8",
-			"quantity": 1,
-			"description": "Light Monster Carapace Armor",
-			"tech_level": "2",
-			"value": "225",
-			"weight": "22.5 lb",
-			"reference": "B283",
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 9,
-					"location": "torso"
-				}
-			],
-			"categories": [
-				"Body Armor"
-			]
-		},
-		{
-			"type": "equipment",
-			"version": 1,
-			"id": "2a18013b-381a-4ab5-b8d7-6c591550f3bb",
-			"based_on_id": "42962275-3e29-4ff2-b456-14f509045e0c",
-			"based_on_hash": "S1eRtc9eiaVuEQacw92jF9UQs+OASw6CpK5BWKykZ0Q",
-			"quantity": 1,
-			"description": "Large Bone Knife",
-			"tech_level": "0",
-			"value": "60",
-			"weight": "1.5 lb",
+			"description": "Titan Bane Sawhook",
+			"tech_level": "3",
+			"value": "240",
+			"weight": "8 lb",
 			"reference": "B272",
 			"weapons": [
 				{
 					"type": "melee_weapon",
 					"damage": {
-						"type": "cut",
+						"type": "imp",
 						"st": "sw",
-						"base": "+1"
+						"base": "+4"
 					},
-					"strength": "6",
-					"usage": "Swung",
-					"reach": "C,1",
-					"parry": "-1",
+					"strength": "11‡",
+					"usage": "Swung (May get stuck)",
+					"reach": "2,3*",
+					"parry": "0U",
 					"block": "No",
 					"defaults": [
 						{
 							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Titan Bane Sawhook"
+						},
+						{
+							"type": "Skill",
+							"name": "Spear",
 							"modifier": -4
 						},
 						{
 							"type": "Skill",
-							"name": "Knife"
+							"name": "Staff",
+							"modifier": -4
 						},
 						{
 							"type": "Skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "Skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "Skill",
-							"name": "Shortsword",
-							"modifier": -3
-						},
-						{
-							"type": "Skill",
-							"name": "Sword!"
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -4
 						}
 					]
 				},
 				{
 					"type": "melee_weapon",
 					"damage": {
-						"type": "imp",
-						"st": "thr"
+						"type": "cut",
+						"st": "sw",
+						"base": "+5"
 					},
-					"strength": "6",
-					"usage": "Thrust",
-					"reach": "C",
-					"parry": "-1",
+					"strength": "11",
+					"usage": "Swung",
+					"reach": "2,3*",
+					"parry": "0U",
 					"block": "No",
 					"defaults": [
 						{
 							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Polearm"
+						},
+						{
+							"type": "Skill",
+							"name": "Spear",
 							"modifier": -4
 						},
 						{
 							"type": "Skill",
-							"name": "Knife"
-						},
-						{
-							"type": "Skill",
-							"name": "Force Sword",
-							"modifier": -3
-						},
-						{
-							"type": "Skill",
-							"name": "Main-Gauche",
-							"modifier": -3
-						},
-						{
-							"type": "Skill",
-							"name": "Shortsword",
-							"modifier": -3
-						},
-						{
-							"type": "Skill",
-							"name": "Sword!"
-						}
-					]
-				},
-				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "imp",
-						"st": "thr"
-					},
-					"strength": "5",
-					"usage": "Thrown",
-					"accuracy": "+0",
-					"range": "x0.5/x1",
-					"rate_of_fire": "1",
-					"shots": "T(1)",
-					"bulk": "-1",
-					"defaults": [
-						{
-							"type": "DX",
+							"name": "Staff",
 							"modifier": -4
 						},
 						{
 							"type": "Skill",
-							"name": "Thrown Weapon",
-							"specialization": "Knife"
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -4
 						}
 					]
 				}
 			],
 			"categories": [
 				"Melee Weapon",
-				"Missile Weapon"
+				"Titan Bane Arms"
 			]
 		},
 		{
 			"type": "equipment",
 			"version": 1,
-			"id": "680b07b5-0395-4644-9e30-642ad309aac2",
-			"based_on_id": "f1ee3ef0-7f95-4500-b545-78aa499f1d59",
-			"based_on_hash": "o0PFeEOuTaUDzt1qRACqqgn1kRbWqmPzhVThoePpMWc",
+			"id": "4d9747b4-33e0-46b9-affc-9c001e9e886f",
+			"based_on_id": "9e94c02a-71bb-454b-b6f6-4f1876f509d9",
+			"based_on_hash": "l3NK3ZhNYoTHtLkGTt6fYvWzB/5ag2r9FsMBUkrENPE",
 			"quantity": 1,
-			"description": "Bone-Studded Monster Leather Skirt",
-			"tech_level": "1",
-			"value": "90",
+			"description": "Crisis Aegis (Steadfast)",
+			"tech_level": "5",
+			"value": "750",
 			"weight": "60 lb",
-			"reference": "B283",
-			"features": [
+			"reference": "B287",
+			"weapons": [
 				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "groin"
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "+1",
+						"modifier_per_die": 1
+					},
+					"strength": "0",
+					"usage": "Shield Bash",
+					"reach": "1",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"specialization": "Buckler",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"specialization": "Force Shield",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"specialization": "Shield"
+						}
+					]
 				},
 				{
-					"type": "dr_bonus",
-					"amount": 6,
-					"location": "legs"
+					"type": "melee_weapon",
+					"damage": {
+						"type": "",
+						"st": "thr",
+						"modifier_per_die": 1
+					},
+					"usage": "Counter",
+					"reach": "C,1",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Crisis Aegis ",
+							"specialization": "Steadfast"
+						}
+					]
+				}
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 3,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 3,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 3,
+					"attribute": "block"
+				}
+			],
+			"notes": "Counter Malfunctions on a 16 or higher",
+			"categories": [
+				"Shield"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "8e0c057b-5c38-42aa-bdbb-a174430f48a8",
+			"based_on_id": "4d9747b4-33e0-46b9-affc-9c001e9e886f",
+			"based_on_hash": "Fj7La8/OrNRdVJM1tRTfufPSCrYBgEpkVf5v0EuZrw4",
+			"quantity": 1,
+			"description": "Crisis Aegis (Arcane)",
+			"tech_level": "5",
+			"value": "2500",
+			"weight": "90 lb",
+			"reference": "B287",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "+1",
+						"modifier_per_die": 1
+					},
+					"strength": "0",
+					"usage": "Shield Bash",
+					"reach": "1",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"specialization": "Buckler",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"specialization": "Force Shield",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Shield",
+							"specialization": "Shield"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "",
+						"st": "thr",
+						"modifier_per_die": 1
+					},
+					"usage": "Magic Counter",
+					"reach": "C,1",
+					"parry": "No",
+					"block": "+0",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Crisis Aegis ",
+							"specialization": "Arcane",
+							"modifier": -6
+						}
+					]
+				}
+			],
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 4,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 4,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 4,
+					"attribute": "block"
 				}
 			],
 			"categories": [
-				"Limb Armor"
+				"Shield"
 			]
 		}
 	]

@@ -142,7 +142,7 @@
 			"id": "777d8c4f-de1a-4920-b32c-48c02eab2e61",
 			"based_on_id": "9746f6d6-8056-4844-be8d-853bb32dbc96",
 			"based_on_hash": "FtStYIlCVs6jA1I7dLhyLYJM0Xzwzjs7qXDfafieLEU",
-			"name": "Shield",
+			"name": "Titan Bane Shield",
 			"reference": "B220",
 			"specialization": "Shield",
 			"difficulty": "DX/A",
@@ -155,12 +155,362 @@
 				{
 					"type": "Skill",
 					"name": "Shield",
-					"modifier": -4
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Shield",
+					"modifier": -2
 				}
 			],
 			"categories": [
 				"Combat/Weapon",
 				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "b66236d8-a9ff-4217-b84c-8bcd89f433ab",
+			"based_on_id": "777d8c4f-de1a-4920-b32c-48c02eab2e61",
+			"based_on_hash": "dxjrICo4HK+oMYAQ+8DdQUF6K2TlzXqpQr62kLtgamg",
+			"name": "Crisis Aegis",
+			"reference": "B220",
+			"specialization": "Steadfast",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Shield",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Shield",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "89e8e508-7b3a-434d-bd1e-1795dc642507",
+			"based_on_id": "b66236d8-a9ff-4217-b84c-8bcd89f433ab",
+			"based_on_hash": "vnHUAjI5rw97yfWNTmMHsYkaF96Obpr0jUKDAqwVnWk",
+			"name": "Crisis Aegis",
+			"reference": "B220",
+			"specialization": "Arcane",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Shield",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Shield",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "04659f4f-22f1-4262-b34d-38700e72aac8",
+			"based_on_id": "89e8e508-7b3a-434d-bd1e-1795dc642507",
+			"based_on_hash": "N9sD985fZUdc7zKRac6ghhVuICs+Nk1jyJh8ml2YrHo",
+			"name": "Crisis Aegis",
+			"reference": "B220",
+			"specialization": "Guillotine",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Shield",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Shield",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "412e9181-35fb-41de-9c32-aa73ccba3171",
+			"based_on_id": "777d8c4f-de1a-4920-b32c-48c02eab2e61",
+			"based_on_hash": "a31EQuyFM52tjOUaX4pGNxO6uYuNd3564xIOSiSJWDY",
+			"name": "Titan Bane Guillotine",
+			"reference": "B220",
+			"specialization": "Shield",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Shield",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Shield",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "634c261e-d7fe-40fb-90d3-82e4be4db052",
+			"based_on_id": "c13373e2-d672-493a-8777-c84bb0d2cd73",
+			"based_on_hash": "NAg+VTRtBQJtFyL667LlbI6ezP4RK11TCHpAsgmz7Iw",
+			"name": "Ogre Armor",
+			"reference": "B192",
+			"tech_level": "",
+			"difficulty": "DX/A",
+			"points": 1,
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_most",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"which": "st",
+						"qualifier": {
+							"compare": "at_least",
+							"qualifier": 16
+						}
+					}
+				]
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"notes": "Ogre Armor is TL5",
+			"categories": [
+				"Military",
+				"Technical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "fbff9f4c-a859-4eea-99f8-2e587b8df2c6",
+			"based_on_id": "4ae61866-c3b3-4c48-bb72-513962af9fbe",
+			"based_on_hash": "f9sjr/3tgu4a/RffnAOK31tSGXqBeYgwv/1rm0/FS5Q",
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Ogre Armor",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Battlesuits",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "d22d1e42-a7db-4e83-8834-a3cd69a483e4",
+			"based_on_id": "fbff9f4c-a859-4eea-99f8-2e587b8df2c6",
+			"based_on_hash": "O/ngEGdcOxWCOSGYyour5zT2unMkvFN9VJKwVD3GUSY",
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Titan Bane Arms",
+			"tech_level": "",
+			"difficulty": "IQ/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Battlesuits",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"id": "3c0bd849-367e-4de1-9ac1-77830ff59c78",
+			"based_on_id": "4ce5fe88-7df0-4332-868d-22a697855c07",
+			"based_on_hash": "K3k9fMEnRPpDB1HeUcOjRvfuF9hMymQD+cg9DCg3QRM",
+			"name": "Slam",
+			"reference": "B371",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 4,
+			"default": {
+				"type": "Block",
+				"name": "@Skill@"
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"id": "0b3a165e-de50-43f5-803f-b291ea4cbf62",
+			"based_on_id": "3c0bd849-367e-4de1-9ac1-77830ff59c78",
+			"based_on_hash": "06m6LkaEyPf/BqxlIOvWkF4Nls77PzmL8vLy7JCap1c",
+			"name": "Hold Fast",
+			"reference": "B371",
+			"difficulty": "A",
+			"points": 1,
+			"limit": 0,
+			"default": {
+				"type": "Block",
+				"name": "@Skill@",
+				"modifier": -4
+			},
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"id": "89bdcef6-f30d-4942-95d7-0f057c872f44",
+			"based_on_id": "93649acc-cb2e-4b36-bcfc-4867d89067c4",
+			"based_on_hash": "uCs6Om7c2jQTGOQLBmPnrmH7XSN2MAjXCW4ccXnv0HI",
+			"name": "Pile Bunker Counter",
+			"reference": "MATG38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Block",
+				"name": "@Skill@",
+				"modifier": -6
+			},
+			"notes": "Allows Crisis Aegis Counter",
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"id": "b517439a-8d6a-4ca9-ac6b-9212701dd9f7",
+			"based_on_id": "89bdcef6-f30d-4942-95d7-0f057c872f44",
+			"based_on_hash": "W0SkuWEr0AKB4BdEn9kb5H0WPeR/zBzMyMKYrSQqb/M",
+			"name": "Arcane Aegis Magic Counter",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 0,
+			"default": {
+				"type": "Block",
+				"name": "@Skill@",
+				"modifier": -6
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "contains",
+							"qualifier": "Magery"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					}
+				]
+			},
+			"notes": "Allows Magic Counter",
+			"categories": [
+				"Technique"
+			]
+		},
+		{
+			"type": "technique",
+			"version": 1,
+			"id": "d52818dc-6ae3-4665-9627-b780b193263c",
+			"based_on_id": "89bdcef6-f30d-4942-95d7-0f057c872f44",
+			"based_on_hash": "ksTKAfzAH3g+RffvrdTRijycvryiGfxntAj9PYVjlk0",
+			"name": "Head Lock",
+			"reference": "MATG38",
+			"difficulty": "H",
+			"points": 2,
+			"limit": 4,
+			"default": {
+				"type": "Skill",
+				"name": "@Skill@"
+			},
+			"categories": [
+				"Technique"
 			]
 		}
 	]

@@ -1,0 +1,276 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "b9f96993-62d2-4539-83c5-dd8ef84a66d8",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "65c0fa1a-4d7f-474e-b513-2acf8bde0509",
+			"name": "Blade of Havoc Template",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"id": "c157eff6-911c-4021-bb4d-18d2ad27c236",
+					"based_on_id": "c6ad4487-fcf8-4788-b08c-1a27897aab26",
+					"based_on_hash": "4aIHFAJeIW22vUxwCukYgScLqvhZj1NSuLhzYWaJOGI",
+					"name": "Attribute Modifiers",
+					"notes": "Delete these from the template and modify your stats.  These are recommended minimums.",
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "fa05c09b-7519-4181-a508-399ffea6196b",
+							"based_on_id": "7f24290f-79cf-4d3b-97df-1b2f81ea63fb",
+							"based_on_hash": "gss4fKES38tn0UnDoBET4s+e8+z2Gv11M7pYSzte5qo",
+							"name": "DX",
+							"physical": true,
+							"levels": "4",
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "dx"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "9b7d3b0a-7015-4311-9b4a-c38b2d14b63d",
+							"based_on_id": "69f3f6ef-e2dd-40bc-847b-6b7c5c4ceef8",
+							"based_on_hash": "NQT3c9qbWpZXtAzb0mA3Re4HimDB5U3HllGdmJku/Ig",
+							"name": "HT",
+							"physical": true,
+							"levels": "4",
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "89a0397f-28d6-44c3-9c4c-fd94f92873b7",
+							"based_on_id": "02d2ac62-1406-4f47-939e-cd08c8b3cbfa",
+							"based_on_hash": "5z7Wz8QnyNxNFnD+FMqiiBtFXFTecugxN8XNY5gkgH4",
+							"name": "IQ",
+							"physical": true,
+							"levels": "4",
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "e7633497-176d-4dc4-9575-c1b485e1faac",
+							"based_on_id": "eecea5e5-acba-4b9f-9051-2234c7cbb1de",
+							"based_on_hash": "ymf+GLtebkO2Q42q/NZCbK+GBTDqf0PuK6rYv7pFfBQ",
+							"name": "ST",
+							"physical": true,
+							"levels": "4",
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "5beb4fa9-190e-4fdb-8971-8040921c4e7c",
+					"based_on_id": "04171edc-4d0e-4ce3-b06f-1815e60b7488",
+					"based_on_hash": "w6bxxt4cnN9GD1T1dnXDZY5YExnNSPmv1gnb4WE7CwU",
+					"name": "Combat Reflexes",
+					"mental": true,
+					"base_points": 15,
+					"reference": "B43",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Enhanced Time Sense"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "fast-draw"
+							}
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "dodge"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "parry"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "block"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 2,
+							"attribute": "fright_check"
+						}
+					],
+					"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "7ba6c7b8-7589-4f0c-88cf-b4e818840b0a",
+					"based_on_id": "c603ba10-9788-4c71-967e-be6c089b0bd2",
+					"based_on_hash": "56yd0wurrBJtJwTolJvptB+84WELZXWJoUvu4z8NvfY",
+					"name": "High Pain Threshold",
+					"physical": true,
+					"base_points": 10,
+					"reference": "B59",
+					"notes": "Never suffer shock penalties when injured; +3 on all HT rolls to avoid knockdown and stunning; +3 to resist torture",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "34419027-37da-418b-acd1-2fafeaaa2385",
+					"based_on_id": "afc12fc8-21a3-4b87-b541-86148579a289",
+					"based_on_hash": "g8jOyt6/OF96KDbvhl4aowVGEw0H4aMn6uBvOxHB3kU",
+					"name": "Duty (Hunting Monsters)",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "6760aee9-fb68-4127-97c4-b32a047dcd94",
+							"based_on_id": "fb0c80a4-4c65-4521-9e18-7378dda34a46",
+							"based_on_hash": "tfLlgCQcuOjmFKz2rLoF15OFpcN7mjIqSRuSjSbA0kY",
+							"disabled": true,
+							"name": "FR: 6",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "56b691c7-37f5-4566-92df-205046c8bdcb",
+							"based_on_id": "92ade39a-a64c-4ff4-a84b-89ab92a6e217",
+							"based_on_hash": "ex33IjXqv9QAvx67DOyCcuYJHbTO+c13T84fSq3NHd4",
+							"disabled": true,
+							"name": "FR: 9",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "971c5591-8709-465f-b8f9-d24042248537",
+							"based_on_id": "80577150-cbdb-4c26-bde4-1ad85a7deec2",
+							"based_on_hash": "iy3xVE1gGMtIZ8IMxdfO951symjsUkq5TIZ2ox/OziY",
+							"name": "FR: 12",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "6ccec21b-eb03-4b77-9f96-9452876f2058",
+							"based_on_id": "d6406b89-6289-4b8c-b7c7-4d25add3c352",
+							"based_on_hash": "4kn1iIXk7g6plbSWHwITd2ZcSPttePwV8zY/uYF2W8g",
+							"disabled": true,
+							"name": "FR: 15",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a04644fe-2caa-47d7-a81b-bc2f54ea8677",
+							"based_on_id": "f4458d02-9b67-42f8-8f31-5837064fb751",
+							"based_on_hash": "k5bPG+RdO3oB/Do+LqXAHAexw+1EFDh4JOO2pWDFCik",
+							"name": "Extremely Hazardous",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5df2452c-c241-4fa2-acd2-203288cf1100",
+							"based_on_id": "814f2484-cac1-4eca-af21-f9eaca8c0d0a",
+							"based_on_hash": "kEVPpyvDtxD6TvfQxIv0qim3LRkDxklWRf/4dIyIScU",
+							"disabled": true,
+							"name": "Involuntary",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a9587618-4f71-4ec2-8284-b5bffc6a8ac6",
+							"based_on_id": "5d87b90f-fc68-4d78-8547-7c2ef58ae7bd",
+							"based_on_hash": "nKPqrhukzEQ8jfAowSefvMk1sa2Ix3348feMpA+LjcU",
+							"disabled": true,
+							"name": "Nonhazardous",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B133",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	]
+}
