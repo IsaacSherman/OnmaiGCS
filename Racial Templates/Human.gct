@@ -10,22 +10,43 @@
 			"based_on_id": "93b54189-edcb-4132-be5d-6a761e3710ad",
 			"based_on_hash": "pZdYizMQRrV4L7P4NG31fJ+Lkcz0YhNanBT9KmDgpQI",
 			"name": "Attribute Modifiers",
-			"open": false,
+			"open": true,
 			"children": [
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "69f3f6ef-e2dd-40bc-847b-6b7c5c4ceef8",
-					"based_on_id": "e6a7bb93-40b3-465c-b70b-a9f8f5cd5b3b",
-					"based_on_hash": "YgJDJtlK4qvnBaOxP8uM4dC+ax+gu+3bXQYAn75heG8",
-					"name": "HT+1",
+					"id": "eecea5e5-acba-4b9f-9051-2234c7cbb1de",
+					"based_on_id": "cf3363b9-eacc-404c-84c4-8ca11d224684",
+					"based_on_hash": "Zkw5CHpsqTHIsU7a6cwpP5Ms1XYCAtQKpVGZvNzlbTk",
+					"name": "ST",
 					"physical": true,
-					"base_points": 10,
+					"levels": "1",
+					"points_per_level": 10,
 					"features": [
 						{
 							"type": "attribute_bonus",
 							"amount": 1,
-							"attribute": "ht"
+							"per_level": true,
+							"attribute": "st"
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "7f24290f-79cf-4d3b-97df-1b2f81ea63fb",
+					"based_on_id": "4248ab22-d105-4037-a772-10d03e8fc28d",
+					"based_on_hash": "fKQnMQol+Cnub6iU6OeoN8/uJXb3S0ysXc/xGhr39E8",
+					"name": "DX",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 20,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "dx"
 						}
 					]
 				},
@@ -35,13 +56,15 @@
 					"id": "02d2ac62-1406-4f47-939e-cd08c8b3cbfa",
 					"based_on_id": "537c34d5-d3d0-4bd1-ab7f-f1bf1f384df1",
 					"based_on_hash": "GSsF3ob5fBbCpNmmAeKum8BbL3wKUYO6a9V2PW6nZxE",
-					"name": "IQ+2",
+					"name": "IQ",
 					"physical": true,
-					"base_points": 40,
+					"levels": "2",
+					"points_per_level": 20,
 					"features": [
 						{
 							"type": "attribute_bonus",
-							"amount": 2,
+							"amount": 1,
+							"per_level": true,
 							"attribute": "iq"
 						}
 					]
@@ -49,17 +72,19 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "eecea5e5-acba-4b9f-9051-2234c7cbb1de",
-					"based_on_id": "cf3363b9-eacc-404c-84c4-8ca11d224684",
-					"based_on_hash": "Zkw5CHpsqTHIsU7a6cwpP5Ms1XYCAtQKpVGZvNzlbTk",
-					"name": "ST+1",
+					"id": "69f3f6ef-e2dd-40bc-847b-6b7c5c4ceef8",
+					"based_on_id": "e6a7bb93-40b3-465c-b70b-a9f8f5cd5b3b",
+					"based_on_hash": "YgJDJtlK4qvnBaOxP8uM4dC+ax+gu+3bXQYAn75heG8",
+					"name": "HT",
 					"physical": true,
-					"base_points": 10,
+					"levels": "1",
+					"points_per_level": 10,
 					"features": [
 						{
 							"type": "attribute_bonus",
 							"amount": 1,
-							"attribute": "st"
+							"per_level": true,
+							"attribute": "ht"
 						}
 					]
 				}

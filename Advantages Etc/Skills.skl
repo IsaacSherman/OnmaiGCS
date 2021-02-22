@@ -1,0 +1,167 @@
+{
+	"type": "skill_list",
+	"version": 1,
+	"id": "0ec13b0c-1877-4bc3-a842-db649e5a93e7",
+	"rows": [
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "9e00f7bc-3653-45f4-b820-9e7b8cdced19",
+			"based_on_id": "9fde98c2-6c6e-488d-9f73-4a84ec6e195f",
+			"based_on_hash": "1vsNZX8kDtHg8o+uI8Q763lBqRUknVv2r06QXp6TprI",
+			"name": "Titan Bane Blade",
+			"reference": "B209",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Two-Handed Sword"
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "42e5f1b0-b99c-479b-8837-743616cc1cb6",
+			"based_on_id": "9226bbe4-cbea-4942-9dad-3b693e973b1c",
+			"based_on_hash": "b2giXqnCsRLaYa7w1EEJfDuebZ6CX4+S4Y47jzXh/zQ",
+			"name": "Titan Bane Hammer",
+			"reference": "B208",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Battleaxe",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Sawhook",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "f4e6eacb-e5ed-45b7-95b8-c44a75a84d4d",
+			"based_on_id": "42e5f1b0-b99c-479b-8837-743616cc1cb6",
+			"based_on_hash": "2sq3fnQTCvQhyONqS5qz06XIFLE4BzvGTt1Rhx+7nsQ",
+			"name": "Titan Bane Battleaxe",
+			"reference": "B208",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Hammer",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Titan Bane Sawhook",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "b9a7354c-82de-4430-aef2-19f7b56b4619",
+			"based_on_id": "c5e9e3b6-d976-444f-9d2a-da1f31730d3a",
+			"based_on_hash": "2+HHwnCJgGQ71q3ewNoZu27QlqCGbBUx/TJx/gk20H0",
+			"name": "Titan Bane Sawhook",
+			"reference": "B208",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Polearm",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Two-Handed Axe/Mace",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "43d6e955-54ed-4696-a94b-a23f399f0fb8",
+			"based_on_id": "b9a7354c-82de-4430-aef2-19f7b56b4619",
+			"based_on_hash": "xNj1jF784YIY3yATRXr9HsJfNtnOV4GdJO51DvXrMsg",
+			"name": "Flow",
+			"difficulty": "DX/H",
+			"points": 1,
+			"notes": "See https://www.worldanvil.com/w/onmai-salemot-raligan/a/flow-technology",
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "777d8c4f-de1a-4920-b32c-48c02eab2e61",
+			"based_on_id": "9746f6d6-8056-4844-be8d-853bb32dbc96",
+			"based_on_hash": "FtStYIlCVs6jA1I7dLhyLYJM0Xzwzjs7qXDfafieLEU",
+			"name": "Shield",
+			"reference": "B220",
+			"specialization": "Shield",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Shield",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		}
+	]
+}

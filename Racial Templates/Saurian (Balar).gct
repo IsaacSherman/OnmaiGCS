@@ -19,7 +19,7 @@
 					"based_on_id": "68374964-7320-413f-b030-bf66ccdfb61c",
 					"based_on_hash": "M8z9Ue/1oJmReG2xi2ffLOq+hHy45+r3Jqd1zjlLUWI",
 					"name": "Attribute Modifiers",
-					"open": false,
+					"open": true,
 					"children": [
 						{
 							"type": "advantage",
