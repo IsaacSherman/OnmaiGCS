@@ -1300,6 +1300,277 @@
 		{
 			"type": "equipment",
 			"version": 1,
+			"id": "2b7a4a3d-8881-4e73-948b-26bc137d88f2",
+			"based_on_id": "e7f355bd-ae70-4a26-8d2e-e05559baff22",
+			"based_on_hash": "u9zp58xPxUF9ept3qjcYlzWUtlkvZOrNUTa7ml7D8KQ",
+			"quantity": 1,
+			"description": "Large Bone Knife",
+			"tech_level": "0",
+			"value": "40",
+			"weight": "1.5 lb",
+			"reference": "B272",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw"
+					},
+					"strength": "6",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr",
+						"base": "+1"
+					},
+					"strength": "6",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrown",
+					"accuracy": "+0",
+					"range": "x0.8/x1.5",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"id": "60fcb659-951c-40b9-9e0f-a161e91ffd7f",
+			"based_on_id": "812bf364-e93b-4303-8099-7b0b4ada3651",
+			"based_on_hash": "9GgjTFfY+pnGXDABar9LTMz5qc/HWGgrkbxmdu6Np8U",
+			"description": "Scabbard, Dagger/Knife",
+			"tech_level": "1",
+			"value": "10",
+			"weight": "0.16 lb",
+			"reference": "LT57,B270",
+			"notes": "Set to 1/3 basic set weight of weapon. Replacement value = 1/5 of weapon",
+			"categories": [
+				"Melee Weapon"
+			],
+			"open": false
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "166379c0-82fd-46b6-afe1-e685919bddd4",
+			"based_on_id": "0f348aa0-bd1f-4100-83dc-d6335987aff3",
+			"based_on_hash": "N3V2kFKnAMVTLz6ILpjtriEV9pK25d3el6F/sh+eGHI",
+			"quantity": 1,
+			"description": "Small Bone Knife",
+			"tech_level": "0",
+			"value": "30",
+			"weight": "0.5 lb",
+			"reference": "B272",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-1"
+					},
+					"strength": "5",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "5",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "5",
+					"usage": "Thrown",
+					"accuracy": "+0",
+					"range": "x0.5/x1",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-1",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
 			"id": "01d7398d-7666-4564-af57-cbf7dee305c3",
 			"based_on_id": "a80507f2-f16e-4299-98ee-3cdb1bb2a00c",
 			"based_on_hash": "w2NHlIV07+UxtzeeePOHJmkCD0/uQMfjiU5WR9AAg48",

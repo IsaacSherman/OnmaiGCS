@@ -47,7 +47,7 @@
 							"based_on_hash": "NQT3c9qbWpZXtAzb0mA3Re4HimDB5U3HllGdmJku/Ig",
 							"name": "HT",
 							"physical": true,
-							"levels": "4",
+							"levels": "3",
 							"points_per_level": 10,
 							"features": [
 								{
@@ -66,7 +66,7 @@
 							"based_on_hash": "5z7Wz8QnyNxNFnD+FMqiiBtFXFTecugxN8XNY5gkgH4",
 							"name": "IQ",
 							"physical": true,
-							"levels": "4",
+							"levels": "3",
 							"points_per_level": 20,
 							"features": [
 								{

@@ -1,0 +1,328 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "fd95ca8e-743c-492a-a7c4-391f7445c467",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "a7426da9-7c12-4fde-89f0-d1f4d2130ef2",
+			"name": "Halfling",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"id": "1d6f3689-0003-44c7-a52e-5294dc4fac37",
+					"based_on_id": "16893ce3-4d15-4203-bb14-e5fbe2ae74a7",
+					"based_on_hash": "wCH8uPTirfe1btY4vEuLnfoDWXjXYGJICfWGZ4unf2c",
+					"name": "Attribute Modifiers",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "fe92642f-b032-4265-a10c-3a8f4a4c855b",
+							"based_on_id": "43deeddb-ceb9-4d89-8039-0b7b2fbda050",
+							"based_on_hash": "F0Ike9dO3qY1/Mhp2NBgaVTZjXPsFqDPlHKW5LFdmX0",
+							"name": "Decreased Basic Move",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": -5,
+							"reference": "B17",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "move"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "0eb33afe-cd6b-4d9b-b72f-42e8515be7b5",
+							"based_on_id": "1f0865a9-19ce-446a-bcdb-583b47aed3f9",
+							"based_on_hash": "qbzPMdW6e8C/npaWcwQPQW0OGNCYakv2gd+8rB5aQ84",
+							"name": "Decreased Size Modifier",
+							"physical": true,
+							"levels": "1",
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "sm"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "b7d542e1-7b21-40f5-9e3f-8d14b4fc2233",
+							"based_on_id": "74174bd6-cee4-4073-8584-760ccaf37ce1",
+							"based_on_hash": "OGsnWihqiKVsFbpbhWZFcOYdKMsJEmJ0fRLvgN+l8Bw",
+							"name": "DX",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "dx"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "766b1f9d-0324-4427-bf6c-4872709f79b7",
+							"based_on_id": "5724b105-018c-4778-885d-cacbe3e99827",
+							"based_on_hash": "Txg4ONJd+K4MWOaV1HH1dQZL8oOADt8b330fsFW8+Yc",
+							"name": "HT",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "ht"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "86322448-0cd7-49c6-b052-f605a5f746fb",
+							"based_on_id": "5724b105-018c-4778-885d-cacbe3e99827",
+							"based_on_hash": "Txg4ONJd+K4MWOaV1HH1dQZL8oOADt8b330fsFW8+Yc",
+							"name": "Increased HP",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "hp"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "bacf3278-e736-4721-b865-4d015bced079",
+							"based_on_id": "2651dfb5-7ba5-40aa-bcf5-6a305e6a6d8d",
+							"based_on_hash": "akJqd3ZZ5gzkXLJaaqw2vLWRoeoTqb4G0JvgkEgG720",
+							"name": "ST -",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": -10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": -1,
+									"per_level": true,
+									"attribute": "st"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "35ee13d4-f69b-4f5b-b910-4bf0245f7bca",
+					"based_on_id": "6fb9c41a-5f84-43a7-a1e4-2f92bfa62d7b",
+					"based_on_hash": "pZB3LAIpVXvKWvUDyRcMQ0NP38VGl5MWVWQo3YPQxxE",
+					"name": "Chummy",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B126",
+					"notes": "React to others at +2; -1 to IQ-based skills when alone"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "96a9ab78-1eea-40d6-a72b-e0e6cbc7295c",
+					"based_on_id": "955bc9fc-8d11-4cb5-b5a1-9466b0069f0e",
+					"based_on_hash": "P2p1Bd0YniaGDNLsv6DwPeQYp6IjeMePGnk2Rr9ooEA",
+					"name": "Gluttony (CR: 12)",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B137"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a1833570-1c3f-4685-aeb4-b8b45f41ffad",
+					"based_on_id": "47691b08-846b-4115-80fb-51c5c7915a4b",
+					"based_on_hash": "s6ZpZGMBzMjlRmuY1klirqZRNukfj1Rv+rzVoOwOiis",
+					"name": "Racial Quirk",
+					"mental": true,
+					"base_points": -1,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "39ff72ad-67bb-439c-aa32-bd96c502984e",
+							"name": "Staid",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fd683a97-f2df-497c-a339-93b0e6d5e933",
+							"name": "Nosy",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total"
+						}
+					],
+					"reference": "B164"
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "c6747367-dca3-4a74-b0f1-6c361d9def68",
+					"based_on_id": "2b7b329f-85a6-4cce-acdd-ae68ef36e881",
+					"based_on_hash": "8GhcEUtHTdo4l+0jLxtNi2H+2qSxEc84b9mW2KCehUI",
+					"name": "Sense of Duty",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "2b9d6184-5d29-45ea-91df-ae040df3dcaa",
+							"based_on_id": "05b84040-4fbf-49fb-9649-4785276bdb98",
+							"based_on_hash": "3n+OIx6424CGc4Hs2zKpVDTE9NRvQ46CN8dV1rfdyKs",
+							"disabled": true,
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5bda4733-7b85-47ea-99cc-c52fc5290fba",
+							"based_on_id": "fb02f536-078a-40da-93d6-1c801c6a1c77",
+							"based_on_hash": "Gob1JukdMc3I1BDeAbELV5vUhjSRHSSoY+b2k1kgUyY",
+							"disabled": true,
+							"name": "@Small Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fd5835bb-f809-4f14-a58c-48d107345cd7",
+							"based_on_id": "9e8cd1e9-5693-4c6c-899d-2b1075ec5aed",
+							"based_on_hash": "Z9sPoEnO5Kbv5lyQ/1JvpYEED2SuMWJOGwVtsZchEz8",
+							"disabled": true,
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "891fba05-f315-4923-94ab-b305ac9bb63c",
+							"based_on_id": "8374b8bb-fb6d-4f39-a77e-633da5264e0c",
+							"based_on_hash": "KnMnFLWL5yNjhfxJSOLTJzCCM9CSwP9E9fU+7bobcA4",
+							"disabled": true,
+							"name": "@Large Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f58b1762-4947-4b02-a58e-5fab4ec47563",
+							"based_on_id": "0d1b96e5-51d5-418a-aeb5-babdc6a3451d",
+							"based_on_hash": "luV9qj1sNK3Fe/NIpYgmT6qU+Wc64iZRzOV94ndg3Ck",
+							"name": "All Sapient Life",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fd4f71f2-41c8-4be6-adcf-5d5023aaff43",
+							"based_on_id": "f3513942-2c1e-46c6-a2c9-8ad549a52878",
+							"based_on_hash": "8bIhFQj0O5e8Zi/EB+ahx5W+DwYaFryBlcWAIswrr5A",
+							"disabled": true,
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B153",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "45b6ef19-cac4-4340-b995-7e1dca96ecfd",
+					"based_on_id": "bcdde8e4-a53f-4763-8cf2-64ccb0f95439",
+					"based_on_hash": "SMLGvAfhJdkWUWRRcmYPYeHAvfZorgrnA6MJ/zINGr4",
+					"name": "Silence",
+					"physical": true,
+					"exotic": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B85",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "stealth"
+							}
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "2dfcc062-7d6c-41e1-a8bc-0f3dd97eb685",
+					"based_on_id": "86e98240-5e72-4b45-8c13-143d91217243",
+					"based_on_hash": "opbX3psvEvvZctoHvpIqF3GX/y+jiMmCyY1x35cM+/8",
+					"name": "Social Regard",
+					"social": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B87",
+					"notes": "Good Neighbor"
+				}
+			]
+		}
+	]
+}

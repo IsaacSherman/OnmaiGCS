@@ -1,0 +1,755 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "01fd8882-d9cf-46cf-8e03-a52ad3a0590a",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "8b699aad-fd1b-4a39-90ea-4472e8373a03",
+			"name": "Elf",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "7ccba700-89bd-4e63-8c75-78cba972a25c",
+					"based_on_id": "04c68af0-bdb6-4ca0-951b-744e0a4bb738",
+					"based_on_hash": "Y8+5M/b7b17juojfl2Mzd0qQAh6F9Jkcx9MpAteeU+o",
+					"name": "Appearance",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a29a738c-367c-4b93-9098-ff420a866ff6",
+							"based_on_id": "5c3fbaaf-d8e7-4d18-8e1c-bc95f8e181c9",
+							"based_on_hash": "pyhIznSFcDBW0gu2pL/4fO1upT3Mf2d2kLXeXt1ik+U",
+							"disabled": true,
+							"name": "Universal",
+							"cost_type": "percentage",
+							"cost": 25,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1204a25b-326b-4752-bb88-d089cd1345f3",
+							"based_on_id": "278d7cf3-c398-415b-9875-894617b17a5f",
+							"based_on_hash": "ghmewKy/3vZ+DGKyVYl+m0UCXyZRgeCzzAfXGHNQq2k",
+							"disabled": true,
+							"name": "Off-the-Shelf Looks",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "89f4788c-0304-4b92-8465-c5facbf9e662",
+							"based_on_id": "5ada8fb6-c8be-4889-9cb7-35ae7bef3f79",
+							"based_on_hash": "XvjkKtKVPjRFyue46MD4nXebW/wKwQJW3CWxs+zOb3c",
+							"disabled": true,
+							"name": "Androgynous",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "9221f73f-483b-42aa-ae0f-064e97ee68e8",
+							"based_on_id": "bc66efbc-a0df-4fdf-82db-9a44f495efc2",
+							"based_on_hash": "zv3BvMkFwpo6lZXpnTe0hdov7byug1XjAJHPMGbyYr8",
+							"disabled": true,
+							"name": "Impressive",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fa3a17af-1d39-46a8-a5d1-034f3c4df7f9",
+							"based_on_id": "f767376d-52ff-40be-b53f-b4ece9a638fb",
+							"based_on_hash": "6i45RjL9CyAMcD3UJBX5VkEplrOzVymX2Yz9OU2pJR8",
+							"name": "Attractive",
+							"cost_type": "points",
+							"cost": 4,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "615d6554-5822-4bea-aa1e-21fe1eee1992",
+							"based_on_id": "8f6f8c32-211b-467e-91d0-f8234bd7daeb",
+							"based_on_hash": "Bg0ihAE6LNZhV9UZMRx4/JTb/cl6VX86YpzKWe6+Vw4",
+							"disabled": true,
+							"name": "Average",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3189fc32-db0b-4dd3-98b5-a4acf43f8405",
+							"based_on_id": "97a4b4b7-925c-4aa1-8dda-ce2586a6e028",
+							"based_on_hash": "4m5sBgnZddcczOe6H0c1S2hKGg17/YUaGzwF3VRbN+4",
+							"disabled": true,
+							"name": "Horrific",
+							"cost_type": "points",
+							"cost": -24,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "c4add480-eaec-4574-81b8-db9327af0e07",
+							"based_on_id": "93129ec0-f452-4577-97f3-636dafe4026c",
+							"based_on_hash": "GOaV1RZQGCAHDQkksLPndAld8tRl/KLDdA2ZfqEwkzg",
+							"disabled": true,
+							"name": "Monstrous",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fa77b7e1-6743-4e75-b00d-3eccb72ce0fa",
+							"based_on_id": "08a4f4de-520d-4785-9651-afc06d5d1435",
+							"based_on_hash": "n0XI+LHMuKyeoWDwezSG1fNS/ydhAFOzANctcMNFOMA",
+							"disabled": true,
+							"name": "Hideous",
+							"cost_type": "points",
+							"cost": -16,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "71803b5f-d87b-4fd2-9335-32494a771e93",
+							"based_on_id": "563c8f07-fc39-43c9-b6f1-951c7fc60e1e",
+							"based_on_hash": "T/RsBMoPTgRRm3xRy3gh9FzoY8gRywGhVCY2OtGyKN4",
+							"disabled": true,
+							"name": "Ugly",
+							"cost_type": "points",
+							"cost": -8,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "88990727-db20-4f80-984e-2eea40ce0160",
+							"based_on_id": "7fa2a5a9-ff26-4fef-9906-016478d3fc96",
+							"based_on_hash": "UbCNKKjPhK0lk/OZT1q+OcJaWsuExFcO/i5k1XuszAY",
+							"disabled": true,
+							"name": "Unattractive",
+							"cost_type": "points",
+							"cost": -4,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "dd3141b1-a21c-4edf-b8b8-0a23f25906cd",
+							"based_on_id": "e9025fe6-df81-4e43-9cbc-1426a3bcb722",
+							"based_on_hash": "zKOUtHUI7h8nFCphBTlYV4n9qL/18xL6eiw+03jD+F8",
+							"disabled": true,
+							"name": "Handsome",
+							"cost_type": "points",
+							"cost": 12,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b6e39208-2ea9-49fc-8acd-d49617550fd0",
+							"based_on_id": "8f36df46-596a-4335-959e-a354113c9f16",
+							"based_on_hash": "a+jU0lVP5PhXyBlbAxcpvxGdKLktK75s1ElJhbQr9uo",
+							"disabled": true,
+							"name": "Beautiful",
+							"cost_type": "points",
+							"cost": 12,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b569d9fb-a1db-4750-94fd-9a13748e8c05",
+							"based_on_id": "28523fb4-9b85-4e99-8e8d-292a656f711c",
+							"based_on_hash": "pVUjXRHoT64zylEGZm2Qy7sXENaY9QdgZigyLfxuKOo",
+							"disabled": true,
+							"name": "Very Handsome",
+							"cost_type": "points",
+							"cost": 16,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "52ebf919-59cc-48d2-92c4-1d5a9fbb7092",
+							"based_on_id": "a6ad7aad-7347-405b-a4d6-5e673146a498",
+							"based_on_hash": "iyOHVVbR8WNhsDstZ06V0xCqO5SgnmRjfrbLdxoeVBg",
+							"disabled": true,
+							"name": "Very Beautiful",
+							"cost_type": "points",
+							"cost": 16,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "44110fdd-b1bc-4276-ac55-4ff2ccf0e465",
+							"based_on_id": "d6c81f0d-8ae9-4dd8-92c0-7f9eca4c02da",
+							"based_on_hash": "WcnRB8sDZtA9Fy4y6rswsFUo3JXu1sMDbOKMj2+SSEo",
+							"disabled": true,
+							"name": "Transcendent",
+							"cost_type": "points",
+							"cost": 20,
+							"affects": "total"
+						}
+					],
+					"reference": "B21",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage_container",
+					"version": 1,
+					"id": "43164608-10c4-4ece-8f2d-078c0ff800c3",
+					"based_on_id": "bdba609d-37bf-4266-b914-4ecc782abb82",
+					"based_on_hash": "bsz59zmF4JVaC6u7EsUFanhAElrLzJs5OvfSDjQlaLk",
+					"name": "Attribute Modifiers",
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "8a35d416-6a0b-4c99-bdb6-b70f0b1788f2",
+							"based_on_id": "d11f5c81-ab10-454b-a68e-872eb4f292f3",
+							"based_on_hash": "IsARonnH9B6fyt8Di4Qh7OPpH5nZieP/iqn/0vyhkuo",
+							"name": "DX",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "dx"
+								}
+							]
+						},
+						{
+							"type": "advantage",
+							"version": 1,
+							"id": "be63869a-98b3-4ed2-a6b5-7c58e1bb1644",
+							"based_on_id": "98e1821c-6f97-42ad-8d7a-06a223e4472e",
+							"based_on_hash": "sMmHNUBIYZIXJE96RfRz6gCw8dZjwzxkkXP/9OfA/SU",
+							"name": "IQ",
+							"physical": true,
+							"levels": "2",
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "iq"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "887e34d5-f354-432d-a048-7399bee2ed98",
+					"based_on_id": "45d74fa7-d8cf-4694-a3da-0bf95301fc80",
+					"based_on_hash": "GWRZo5CsELmpxJ/XBvm4MR/8odny8kS3ta1SnYpMmxA",
+					"name": "Code of Honor (Elven)",
+					"mental": true,
+					"base_points": -10,
+					"reference": "BS185",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "5b7fbe55-4a22-4460-b858-f110a7919ffd",
+					"based_on_id": "5567da29-b5b3-4439-b777-bbeab3fa5a6e",
+					"based_on_hash": "sjAhv0FZ11vEkSCMe8iafDjEG/GwfVFWV8tQLQEEj1M",
+					"name": "Magery",
+					"mental": true,
+					"supernatural": true,
+					"levels": "0",
+					"base_points": 5,
+					"points_per_level": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "172aacfb-60d4-41dd-8a0e-897fe1a41cc7",
+							"based_on_id": "857b4f83-3fc2-49a3-a129-c12f1d67934e",
+							"based_on_hash": "WusZ5qm4lJcWcPK+0BjQSiffcE5IbfB+1PpDzdoXu8E",
+							"disabled": true,
+							"name": "Dance",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "c4883b6f-6166-4ddc-ac0e-7d42f97e32e3",
+							"based_on_id": "595aeee9-74d1-4f75-aafd-b589ee15e337",
+							"based_on_hash": "Anhzsy9Jpn3dCA9IkAj53yss2c+2rauPQN5gjzxMEao",
+							"disabled": true,
+							"name": "Dark-Aspected",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "dc4195fb-90e2-486f-9976-1b2c83d86858",
+							"based_on_id": "978ee517-a4fc-4367-b218-47e36bdf7666",
+							"based_on_hash": "qZx7pzipYiK+F/W9HGsDD9z7FDpAmhChwRfCVgDFBKw",
+							"disabled": true,
+							"name": "Day-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "15336fc8-b7a5-4796-b60d-9109b5a7ba3c",
+							"based_on_id": "bd802186-5387-4a23-9797-3ca58920e2cf",
+							"based_on_hash": "Rp0FyWCy4ff3QY0Sbrpx+IzIR7PDvj+DSCuCDgiyFng",
+							"disabled": true,
+							"name": "Musical",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "665fca7d-f3e7-4a07-ad63-719223623d3e",
+							"based_on_id": "87d0d752-2a3b-4352-bcc1-c4e54f9e9b58",
+							"based_on_hash": "jMTWaCBho5DQhwTt+ZYz7MsjjIBgi8iVZDG1umJFQ2c",
+							"disabled": true,
+							"name": "Night-Aspected",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "841e2b93-7d86-4c2e-93c4-692469b3e9ad",
+							"based_on_id": "9579dd11-6379-4cc7-9f1b-c8c37010d495",
+							"based_on_hash": "nAZhAG7uUEaOQKX89MSYeZe1H0HvL0X2QkrpERfEAIc",
+							"name": "One College",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only",
+							"notes": "@College@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "6f2158b2-6a60-458b-bb26-25de2260787d",
+							"based_on_id": "c6108c47-6a1a-4225-b6d3-6e86a0a8146b",
+							"based_on_hash": "d0D14v9PZ/mh4VC/ettwQ0doTruixbtESQ5CoK+heLc",
+							"disabled": true,
+							"name": "Solitary",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b93deb5e-4ea9-4b10-aed7-990c6ce5c7bc",
+							"based_on_id": "ef110b8d-a8e8-487b-99ba-132b9076bbd0",
+							"based_on_hash": "xiuti/6+lkL1+jYcUHLNPw7fVax9oVbmhVl1pftSE7M",
+							"disabled": true,
+							"name": "Song",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B66",
+					"features": [
+						{
+							"type": "spell_bonus",
+							"amount": 1,
+							"per_level": true,
+							"match": "all_colleges"
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "thaumatology"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "64432f34-9f63-4338-b1af-26deecf7f955",
+					"based_on_id": "a31d3c41-54dc-4bdb-8743-976a1b5cbeb9",
+					"based_on_hash": "FTS4OCUsOPxM+zZ3wrd+mAEg8iXkgOo0FY8ehD4yGiQ",
+					"name": "Sense of Duty",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8f9078e3-fcc8-41d1-929e-68e617e5b06f",
+							"based_on_id": "de47158b-455d-4448-8055-86065b81d6d1",
+							"based_on_hash": "WjsWuvKr7HEQGNLiAJ2Gpk0vS16J6cBfCZIad0CMEnA",
+							"disabled": true,
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ed6427c5-8797-4ff6-8e70-b7a8265703e1",
+							"based_on_id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
+							"based_on_hash": "sJNYn9mgnnEMBMeh4bKLsMVWZtosxIebdKtTHubH+6s",
+							"disabled": true,
+							"name": "@Small Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "30311b19-378c-435a-b6b4-17c267efd4b0",
+							"based_on_id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
+							"based_on_hash": "bfHObGHwkzMZT2/ypaQAH5PcljWActOJh5BQuu0bsm0",
+							"disabled": true,
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5e7357d6-a769-4e5c-945d-2b4aa408b2d0",
+							"based_on_id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
+							"based_on_hash": "+mNP1QWRd4ag8jTrKUzzvdke0Zam6vkz5mlniy63QMo",
+							"disabled": true,
+							"name": "@Large Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "954d36e4-57ab-446e-9a99-466df9f60143",
+							"based_on_id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
+							"based_on_hash": "vzUw9Yibr4SF6ejYaee9uPwFMtb3dDylb4ftrdNLWr8",
+							"name": "Sapients",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "82490e57-3582-49f9-a725-839a5c7018ab",
+							"based_on_id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
+							"based_on_hash": "Bq7WsSHB60v/roE0I9HZia/BCNn+O0S+SrItyXf6Hpw",
+							"disabled": true,
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B153",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "9474ac96-008e-42bd-8a65-53bbe5430398",
+					"based_on_id": "2928f8ec-0179-4caa-a4b4-0d8028941c58",
+					"based_on_hash": "dWD7kPN5EthTaRRKnfgj4Mnklg5o/8T7H0vko2422os",
+					"name": "Talent (Gifted Artist)",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B90",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "artist"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "jeweler"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "leatherworking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "photography"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sewing"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "09a71823-a587-4b93-8338-e657f22530ca",
+					"based_on_id": "68cdb528-bdd6-403e-a220-cd64dabf31f7",
+					"based_on_hash": "2D44nWeWNTK6/1cDvOuDDYZfeCYRE5z95paG6qLlsgo",
+					"name": "Talent (Musical Ability)",
+					"mental": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B91",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "group performance"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "conducting"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "musical composition"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "musical influence"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "contains",
+								"qualifier": "musical instrument"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "singing"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "2dd2aa97-e2ab-49df-849e-bcbf7f484148",
+					"based_on_id": "c1e21c1a-8df2-452d-bf4f-379918e9722a",
+					"based_on_hash": "bzkhykUcds5CuACRzOLpvy1tCSS9nJXBXWo0qRF025g",
+					"name": "Unaging",
+					"physical": true,
+					"exotic": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fe28f6fc-879e-49b0-b127-2dab4a03b9ee",
+							"based_on_id": "152af353-edaf-4749-a7c9-fbe78da493c1",
+							"based_on_hash": "9CWzmkdsmQOouGz1eyNCdyH2fNXXHpkZRou3fDgHQP4",
+							"disabled": true,
+							"name": "Age Control",
+							"reference": "B95",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "70e281e2-91d0-46a0-8877-a0eb563ab813",
+							"based_on_id": "81d3d7d0-d461-49aa-ae5a-986645879353",
+							"based_on_hash": "ytXaMb14Zz1DImg/1TaFNOFab3NBvHgQnR1ffyQ3urM",
+							"disabled": true,
+							"name": "IQ Only",
+							"reference": "RSWL24",
+							"cost_type": "percentage",
+							"cost": -75,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "01568978-14a9-4983-824d-2583e3191c9b",
+							"based_on_id": "49dfdbb2-f9cf-4b33-865f-fa7913fcc6ef",
+							"based_on_hash": "z+ZICZcM930cuO96XTTsv3CSAhrBBI/WSMkfObfLKQ4",
+							"disabled": true,
+							"name": "Halt Aging, Weekly",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": 80,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4462d714-6cee-45fe-a1a1-4c817caf4423",
+							"based_on_id": "c42fb9fc-0ae0-429a-8be4-429ab75ea80d",
+							"based_on_hash": "NRgK10d0wObTA6vGQZCu6ZGUaYk/LNuoBm8SRbIQCo0",
+							"disabled": true,
+							"name": "Halt Aging, Monthly",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fa6b8071-4003-4f22-91bc-b942cfb7b762",
+							"based_on_id": "9634e9ca-d11a-4076-9fe5-d38f29fde37a",
+							"based_on_hash": "WPOIcZeefM4T1l2nbvrcLUwlpOJSB5bf6wSpptu6GBQ",
+							"disabled": true,
+							"name": "Halt Aging, Yearly",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": 130,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "559d6334-8509-4340-949a-e7b4a56afd19",
+							"based_on_id": "f42d0315-fde7-46b2-84b0-4197534727df",
+							"based_on_hash": "4OWYeuXe9YKnOSjGKBdNJy+5+NU4fvCv8BYrG+x8R04",
+							"disabled": true,
+							"name": "Life Extension",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": -30,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "9e441245-e182-4b8c-89a0-9d8cec17a7db",
+							"based_on_id": "3124e255-ddcb-4b62-bcb5-39848715470c",
+							"based_on_hash": "OXkT5KXYca4IWFhpISQDJEovchDBbu0Zy1qOMukg02M",
+							"name": "RPK Rules ",
+							"cost_type": "percentage",
+							"cost": -67,
+							"affects": "total",
+							"notes": "http://www.mygurps.com/index.php?n=Main.GURPSHouseRules"
+						}
+					],
+					"reference": "B95",
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		}
+	]
+}

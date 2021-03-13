@@ -1,54 +1,52 @@
 {
 	"type": "template",
 	"version": 1,
-	"id": "6286164b-85bf-4575-9fdf-0276f236e2c2",
+	"id": "5c87c4da-1eeb-4989-bbc9-bb18739bb2cd",
 	"advantages": [
 		{
 			"type": "advantage_container",
 			"version": 1,
-			"id": "8961cb09-b9a9-4cd6-8865-6515f085dff3",
-			"based_on_id": "6513ae24-b995-438b-89e1-aa17f2af6fbe",
-			"based_on_hash": "bTsXkrTNkJMga426OiTa32sYbZaY2XCBStZgfviBhCw",
-			"name": "Magari",
-			"open": true,
+			"id": "54c4b79f-d478-4856-a2a5-e2a1ec157336",
+			"name": "Co Bach (Kobold)",
+			"open": false,
 			"children": [
 				{
 					"type": "advantage_container",
 					"version": 1,
-					"id": "bdba609d-37bf-4266-b914-4ecc782abb82",
-					"based_on_id": "7ee6d953-08de-48e7-872a-50d01e1ba276",
-					"based_on_hash": "YPlRoS4wsTzq0jRLhsFLPLTcX67YRk68D/1TUf74BtE",
+					"id": "826bb910-ae34-42db-bc40-5b63a5cf3fe5",
+					"based_on_id": "bdba609d-37bf-4266-b914-4ecc782abb82",
+					"based_on_hash": "bsz59zmF4JVaC6u7EsUFanhAElrLzJs5OvfSDjQlaLk",
 					"name": "Attribute Modifiers",
-					"open": false,
+					"open": true,
 					"children": [
 						{
 							"type": "advantage",
 							"version": 1,
-							"id": "cd355fd5-dffe-4465-8727-43afc27e4524",
-							"based_on_id": "0e0937dd-6af7-48ab-9dd3-995bd47001a9",
-							"based_on_hash": "o23c+naHQoxoWGLygNQrz+gEcl61ceMaLQNGSfHHNc4",
-							"name": "HT",
+							"id": "d11f5c81-ab10-454b-a68e-872eb4f292f3",
+							"based_on_id": "4248ab22-d105-4037-a772-10d03e8fc28d",
+							"based_on_hash": "fKQnMQol+Cnub6iU6OeoN8/uJXb3S0ysXc/xGhr39E8",
+							"name": "DX",
 							"physical": true,
 							"levels": "1",
-							"points_per_level": 10,
+							"points_per_level": 20,
 							"features": [
 								{
 									"type": "attribute_bonus",
 									"amount": 1,
 									"per_level": true,
-									"attribute": "ht"
+									"attribute": "dx"
 								}
 							]
 						},
 						{
 							"type": "advantage",
 							"version": 1,
-							"id": "98e1821c-6f97-42ad-8d7a-06a223e4472e",
-							"based_on_id": "4248ab22-d105-4037-a772-10d03e8fc28d",
-							"based_on_hash": "fKQnMQol+Cnub6iU6OeoN8/uJXb3S0ysXc/xGhr39E8",
+							"id": "7c770ec4-d943-4159-ac1f-298675475449",
+							"based_on_id": "98e1821c-6f97-42ad-8d7a-06a223e4472e",
+							"based_on_hash": "sMmHNUBIYZIXJE96RfRz6gCw8dZjwzxkkXP/9OfA/SU",
 							"name": "IQ",
 							"physical": true,
-							"levels": "2",
+							"levels": "1",
 							"points_per_level": 20,
 							"features": [
 								{
@@ -58,32 +56,13 @@
 									"attribute": "iq"
 								}
 							]
-						},
-						{
-							"type": "advantage",
-							"version": 1,
-							"id": "5eb40dee-c1fa-4896-8589-4899d7747212",
-							"based_on_id": "6d1e796e-4bbe-449b-b7c0-08c9341ef136",
-							"based_on_hash": "Rt7XeZSptkje1HSNO42L6ood0n+4n2ZcwnnntaQebaQ",
-							"name": "ST",
-							"physical": true,
-							"levels": "1",
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"amount": 1,
-									"per_level": true,
-									"attribute": "st"
-								}
-							]
 						}
 					]
 				},
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "e13e5be9-d0c8-4550-bfa4-0e7b925351e8",
+					"id": "4f606401-9d26-4db8-8884-bcfdba449a21",
 					"based_on_id": "d4ab6d9c-72b5-4d60-a6ec-b0f70992d923",
 					"based_on_hash": "RivNNEppDEvcV3oBS5hsxb16re21ecwKXbjltwjPzF0",
 					"name": "Crushing Striker (Tail)",
@@ -95,8 +74,7 @@
 							"type": "melee_weapon",
 							"damage": {
 								"type": "cr",
-								"st": "thr",
-								"modifier_per_die": 1
+								"st": "thr"
 							},
 							"reach": "C",
 							"parry": "0",
@@ -112,6 +90,17 @@
 							]
 						}
 					],
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7ac30edb-74ee-4ba9-9075-48ccb6aef08c",
+							"name": "Weak",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						}
+					],
 					"reference": "B88",
 					"categories": [
 						"Advantage"
@@ -120,19 +109,46 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "8b01d248-4fa6-4c76-9bef-138471a5271d",
+					"id": "861a1fb5-d20e-44f9-959f-c3388d11b045",
+					"based_on_id": "a5032dbb-3109-43b5-8c2c-2e1a1d0fe889",
+					"based_on_hash": "UmQKwPxIDALML/W+g5xDE5W3JSfheqR8WpXbf2uwxKI",
+					"name": "Cultural Adaptability",
+					"mental": true,
+					"base_points": 10,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b9a5b65d-0903-473a-af3d-e6de4348cc7d",
+							"based_on_id": "93b78dfa-518a-4672-8ebd-fb558ebbff17",
+							"based_on_hash": "39dNoeePGYAArhb5WQ1LXZWT6cy1D4Vi+9jGZJva/Ys",
+							"name": "Xeno",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						}
+					],
+					"reference": "B46",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "7133a79c-744b-406a-91e8-d12aca5c38fa",
 					"based_on_id": "61fcd99c-d1a0-4510-82ba-25f6cd3ca220",
 					"based_on_hash": "O/ygN0x4/YLwoQF9x3egPLqENeQ9UjPEhbnGv1SCBcM",
 					"name": "Damage Resistance (Scaly Skin)",
 					"physical": true,
 					"exotic": true,
-					"levels": "5",
+					"levels": "2",
 					"points_per_level": 5,
 					"modifiers": [
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "e35158f4-66fa-4aeb-9d6b-02ba2d2d323f",
+							"id": "5cf5bde4-a12c-42fe-9d75-6d3b46371b66",
 							"based_on_id": "756497b7-907e-4582-a6d1-fe974c48387d",
 							"based_on_hash": "qv5QjwZ1zlZC/7JS2YHKSzrrxZeBInkE76EqAm4aibo",
 							"disabled": true,
@@ -145,7 +161,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "e07c87d9-e99f-4705-a818-7bf6a610a805",
+							"id": "340454e5-4f8b-4fea-b2fb-b9a326de5c51",
 							"based_on_id": "ddb266ee-61ac-4c7f-bd3e-cfe2b371d20a",
 							"based_on_hash": "2u+D3yWrozJZcvHZ1B8Rk2mN54T8YJI20+BozaseOgU",
 							"disabled": true,
@@ -159,7 +175,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "56f141fc-00b9-41ca-94b7-66fe7b609b8f",
+							"id": "56f2a2a5-0111-43c4-9f05-21d7751115cf",
 							"based_on_id": "5ed65242-6ba3-423d-8584-52a0b1518f4c",
 							"based_on_hash": "A3xeJ0oPx3rZXlwW+KeKekb40O9C+RKauncTD4HoCqw",
 							"disabled": true,
@@ -173,7 +189,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "f8c81be4-a481-45c7-92e2-d5bbbc53286e",
+							"id": "4f569272-1e95-4649-87a4-2696f66b37b1",
 							"based_on_id": "1f324422-dda7-4898-bdc7-fb38285ca638",
 							"based_on_hash": "whSnxkCRjdaBvWIf9VgX05dMZz7P0hmyK8X6DvMatt0",
 							"disabled": true,
@@ -187,7 +203,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "1f5b71e0-b871-4f19-a1aa-7903e768fd6d",
+							"id": "651e5035-16b9-40b2-929e-2cb3740cb184",
 							"based_on_id": "27b55054-4294-4f71-83cd-63ffd295f1d6",
 							"based_on_hash": "Ux6e/lkjgiDYgkasfg8+bYnvCGwYKVNz1rsRbFv+Xwc",
 							"disabled": true,
@@ -201,7 +217,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "10b6c62b-8cf7-4b70-814e-f79a63f0adde",
+							"id": "b0a5a3d3-32dc-4218-b2ef-83cbeb97250f",
 							"based_on_id": "6786e786-e6d1-4d00-872d-fbcfd1bdf79a",
 							"based_on_hash": "135qgregTANX3IFz6sTUxXyoAUKD/ScZc3C597WOd04",
 							"disabled": true,
@@ -214,7 +230,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "54eb6373-9e3a-4d10-83ac-c17fc117a7ff",
+							"id": "d8979101-a288-4b50-87d3-f0137137f8a5",
 							"based_on_id": "029cbc7f-ae26-4f2f-8645-70c7035868de",
 							"based_on_hash": "xXDBTiXlCZVsu1M7i8NUL8BUcVQ6b+CsdxAYMica1SQ",
 							"disabled": true,
@@ -228,7 +244,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "f1984a14-80a9-4e91-aa18-21c93a906c76",
+							"id": "7ab78b1b-74cb-4cbc-8b29-17b1d0f13f19",
 							"based_on_id": "040b2024-c148-458f-b76d-ff658694e4ea",
 							"based_on_hash": "j2lAbZcBZF17GZiW+htW0S0tF6yWktHTFnTUOL8Blc0",
 							"disabled": true,
@@ -242,7 +258,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "64ad26dd-254a-404b-89c6-c8676d78ab0f",
+							"id": "4aff99af-6733-41a0-9128-2f676ec17e83",
 							"based_on_id": "523bc9fc-f322-4dd8-a2fb-ea3fb62fdaae",
 							"based_on_hash": "ru76wyvBOAdeRBk7CZAiD1Twy1KPtpZv2IqMNG7w8G4",
 							"disabled": true,
@@ -256,7 +272,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "a7c3b956-3bf7-4fe9-95d5-f422a8432a8b",
+							"id": "11fb7920-1599-4031-8fec-78a1d8cebee3",
 							"based_on_id": "151fe1f8-b316-4c9b-91a1-ebcd5fd60d27",
 							"based_on_hash": "PiymA6SvK3uAQ+QGt2vuwCmMYoN1cgeo8gXZ4E2HCa0",
 							"disabled": true,
@@ -270,7 +286,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "8fe20dd7-49b4-4b05-bc4a-9383630c0c5d",
+							"id": "0e4ecef1-aae3-4b81-b356-986858bd81b3",
 							"based_on_id": "a006efa3-a91b-4ddc-967a-f7ab513f3969",
 							"based_on_hash": "yHYs82VxezTeLzmXg1MUPfLswskEkAV1G3PKdtWUs20",
 							"disabled": true,
@@ -284,7 +300,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "63aaa029-6711-4df4-9264-69a9fb739244",
+							"id": "d8d8028b-d666-4126-99ae-522242fe18bd",
 							"based_on_id": "7ebe52e1-3b0a-46d1-8544-63335b181563",
 							"based_on_hash": "r1sPNAzkRnFjtELZyywxp0BwYcsD8nwES1W429wNGFw",
 							"disabled": true,
@@ -297,7 +313,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "007f6a23-207b-4385-a511-364cb4513c69",
+							"id": "02a0ca0e-55d0-48ce-9fa0-a8a7a0bd02f2",
 							"based_on_id": "4cb72951-d99a-41c7-9960-b2801d532077",
 							"based_on_hash": "45Ovk3XEhyDHHAWZ0EWGB88tlYU+IWZpWu+fF6AQjdM",
 							"disabled": true,
@@ -311,7 +327,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "15692cf1-7d3f-4881-a20f-984e1b7b2d2e",
+							"id": "39b80039-96d8-4f03-bb78-f7bb54665054",
 							"based_on_id": "eeff9797-e8a1-4d5d-82b6-3fc51b114a0f",
 							"based_on_hash": "izt0q3cXd/uHqbJZBuXO3ce0v3uvxUoCINJ7Ray22sk",
 							"disabled": true,
@@ -324,7 +340,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "65eead01-a921-41f9-a615-5fd95f369035",
+							"id": "6e7ffd0f-22d4-4c10-b196-109dc9eb9e24",
 							"based_on_id": "c508bcf1-d370-43a1-8892-69399ffa0737",
 							"based_on_hash": "70ap1krakjILugL/c8wwjXSzd4q0ib5GCAiX2B9GDYQ",
 							"disabled": true,
@@ -337,7 +353,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "b9903a14-f96e-4d56-a957-440afb7af400",
+							"id": "e8824c23-4ad0-40a5-bea9-b8a7b208d6ea",
 							"based_on_id": "1e2d1ba2-d844-4fff-b774-9c5190c049c8",
 							"based_on_hash": "jpqfDXicaJbm278cH/ClOG7Z/3oM/1fVieEfC7P/ZmY",
 							"disabled": true,
@@ -351,7 +367,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "b6ef104a-0cbe-4fc6-95c6-f1b4ab43bf1a",
+							"id": "2c52bf04-b476-4c1c-a4c9-88e1f2bf8d4f",
 							"based_on_id": "91f11a5c-9f32-4e54-ba94-5b012d84c4cc",
 							"based_on_hash": "NhYB4uX1t4onIr4oFq43Is9sZWg3AAAeRmbgCA1XU8k",
 							"disabled": true,
@@ -365,7 +381,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "07358188-0a20-49b0-b5ec-67721b46a5dd",
+							"id": "887e8f88-b98b-4965-be15-838f52161b81",
 							"based_on_id": "bf5ad1fd-4f4e-4e1e-8c3f-87869759567d",
 							"based_on_hash": "BR9LRTxvqmSfbHH7JWwSPcOaFaCWu4UC8m1lIy76XTA",
 							"name": "Tough Skin",
@@ -377,7 +393,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "f503c1e2-da9d-4bff-9730-b730cc3a97da",
+							"id": "4749299d-7574-47b6-94e7-58d645a92d51",
 							"based_on_id": "a44c8c3b-1318-4cb5-889f-0a4416159283",
 							"based_on_hash": "0QMKSSM0a/2yBa62eGod3SY5/zRPwGNH9++BuYEJq/w",
 							"disabled": true,
@@ -391,7 +407,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "d2e4b5db-b8cd-439d-bad1-5d9fb9a756fc",
+							"id": "5f6e3862-38d2-4a0a-9742-0c5ea8feed71",
 							"based_on_id": "c2aa7bba-d9da-40e1-b8f1-48f94f8c2419",
 							"based_on_hash": "LEea+sUmZ0T9BeczumetGCZPxFxDk4PTgRxr59mLqWU",
 							"disabled": true,
@@ -404,7 +420,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "3b0f06b6-2195-4d8a-b1f3-7190c2482ec8",
+							"id": "82ac33c5-ac2f-45cb-8123-52f2d2273bbc",
 							"based_on_id": "34e99500-414c-41ea-90d8-79611bb72cb0",
 							"based_on_hash": "D8X3+iu99tnlvokPSjJdUvVJbM5oW4ohV7fi7mJ4wfA",
 							"disabled": true,
@@ -418,7 +434,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "aae191b4-7087-40a3-b487-2774823b82a4",
+							"id": "57a45650-d0ae-4c7a-bf9a-f302d2f21729",
 							"based_on_id": "3797a7db-35c2-4df4-93fc-123c3ab64ee8",
 							"based_on_hash": "LSbsK2IrmW46YBxyol8XX9P+TBQi1SsIxpW15BshbIw",
 							"disabled": true,
@@ -431,7 +447,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "05862ecb-e93e-4ba2-91a2-4cae0f4495f7",
+							"id": "8866bc81-f647-442d-b615-aa6ce7091b92",
 							"based_on_id": "cb6ec6e6-950a-49a9-b384-34bd681c7d78",
 							"based_on_hash": "R1LVkaMs2DW3wsH97h/xgNNrb5uKaUa7QRpsuDzLPTg",
 							"disabled": true,
@@ -444,7 +460,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "b1b58c99-526e-44ce-b1ef-dd6b980e349e",
+							"id": "8376771f-edef-48b1-bd15-deba2e231625",
 							"based_on_id": "891aa5f8-9d36-48c7-a8ad-1a561c34aea2",
 							"based_on_hash": "CqyxpakYFPG5B1MNh1qdi0hCiNjoetUdg1PqH4FI+zU",
 							"disabled": true,
@@ -457,7 +473,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "b7ed8971-34a7-4140-a4f6-f719297adc47",
+							"id": "4c4d54c4-0ce2-45f5-86bb-e340b146dcbe",
 							"based_on_id": "83c1bab5-7e1f-479b-ba19-ef421491551b",
 							"based_on_hash": "eqv85vXCVd1bB62Z0LOsrGG2FxM/Spkrh2RqZIo5JVA",
 							"disabled": true,
@@ -484,7 +500,29 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "f66d8695-a8d5-4088-b8fb-60ae6a8a7736",
+					"id": "1970b49e-2c87-41e9-8b8a-26c2bebf90b4",
+					"based_on_id": "4b19af3b-a279-40f8-9451-e05aefb1aee3",
+					"based_on_hash": "plAmZml+6iBHl2XBL+GXDZiMShnucdTV/vpf/Fx8wmE",
+					"name": "Gregarious",
+					"mental": true,
+					"base_points": -10,
+					"reference": "B126",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": 4,
+							"situation": "to others"
+						}
+					],
+					"notes": "-2 to IQ-based skills when alone, or -1 in a group of 4 or less",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "45d5673b-e828-4e60-b81f-79d4ef65c2d8",
 					"based_on_id": "0323b725-a7da-47cb-b5d3-7e238b2ca326",
 					"based_on_hash": "axe1E+V062e91kXAVYri8kxSUJ9ciKNL8WTq1aY6r1Q",
 					"name": "Infravision",
@@ -495,7 +533,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "e0e36b36-2732-46e3-9df9-1665f8821491",
+							"id": "7f51ed31-7c59-40fe-84d0-9f245a43986d",
 							"based_on_id": "3131ae73-7703-41ab-8c19-c0acf319f4d8",
 							"based_on_hash": "IXE4PU2I/rIIVeFwHeNO8Sgt7E/6fC8+Pc1+XoYfIs8",
 							"disabled": true,
@@ -514,7 +552,7 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "4ecd07cd-9e48-4fa5-8f95-ab900a27390a",
+					"id": "31b22988-b92a-4b11-a6af-c3a40d1f1956",
 					"based_on_id": "d058a079-852a-458b-aee8-fc866643e42a",
 					"based_on_hash": "ZXYPzR6eo547YnXA0WHa5gBUPYyJe+JQP6L+45rX6M4",
 					"name": "Racial Skill Bonus - Climbing",
@@ -543,7 +581,129 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "f619de67-3338-4bf4-a56b-00ec2198c371",
+					"id": "30062fda-9870-4843-9831-1eb11393ee6f",
+					"based_on_id": "bb686b77-de17-499e-b91f-a13b63368211",
+					"based_on_hash": "eDGzdpVdJVuhQhh7cNpvJwcB9nQ3rhAbSgJPIEeGUSE",
+					"round_down": true,
+					"name": "Reputation(Kobold)",
+					"social": true,
+					"levels": "3",
+					"points_per_level": -5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1b7b2d01-8c1a-433f-816d-011236d12a9f",
+							"based_on_id": "4ab6e069-8e13-4a45-82bd-e07fbebf17a7",
+							"based_on_hash": "2zci2QqYuaJsdgvCu46cW6RT30H7pJsdlPO/AShzs4M",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 1,
+							"notes": "Almost everyone"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5006102b-70cc-4590-a29c-4942f462e38c",
+							"based_on_id": "cd068eef-48af-4246-b1f4-c634f7c24a85",
+							"based_on_hash": "K/btRIb97YoKX95T5ytliT6R4QH1Byewcf1qqE2B3Sk",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.67,
+							"notes": "Almost everyone except @large class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "743257fb-222c-41a7-a38b-f3e392fe546e",
+							"based_on_id": "d65bc4bc-7b2c-448f-bac1-09f70431fb57",
+							"based_on_hash": "udzYQ0qGxQb/PQRoaHWKGGlIEYtvcSFhXxrrpBgvKpU",
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "People ignorant of Saurians"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "beef61ae-8073-4c27-9d34-a9dd77e11bb5",
+							"based_on_id": "8ecfba87-4088-4469-baa7-9c83d0be8f02",
+							"based_on_hash": "1mhLZcozchJ+fYldalPfYoWNbwFPGTDABZg5WqQwu94",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "@Small class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e949660d-603a-4dec-851a-9c105ede9c22",
+							"based_on_id": "cea05dc0-0766-4fd4-a469-9a45972f922c",
+							"based_on_hash": "RaLC6k6cqMSPOoahRuwCJqx8CKAO7JQlcRqpf7P0wCY",
+							"name": "Recognized all the time",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3621553d-a9a6-45a9-9e1a-7b614f396264",
+							"based_on_id": "2d07e305-cee0-4c7f-90de-5977987209cf",
+							"based_on_hash": "WVZGTRli3TqePOFHGbMU3Gbc6QziWELVR+pORIdO5gg",
+							"disabled": true,
+							"name": "Recognized sometimes",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "10-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8646e36e-c0ab-4720-becf-b718cb833839",
+							"based_on_id": "9c247890-4512-431a-8f0e-3a033bc21284",
+							"based_on_hash": "e9xZkR0Czxw2rrgbSV9hOGh1IpRbutc7PE31dAZ86QQ",
+							"disabled": true,
+							"name": "Recognized occasionally",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "7-"
+						}
+					],
+					"reference": "B26",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "e7a11183-16ac-4395-a3f6-9f4638c24619",
+					"based_on_id": "2241b57a-5ca1-4bbe-b8e2-a5e963e1645d",
+					"based_on_hash": "edfSHsTQcYija9MAkDCDv3VQ8XtsqrK92k/ZdUb71XI",
+					"name": "Selfless",
+					"mental": true,
+					"base_points": -5,
+					"cr": 9,
+					"reference": "B153",
+					"notes": "You must make a self-control roll to put your needs – even survival – before those of someone else.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "89c2fd5a-f3ca-4c76-a832-9d87f751e9d1",
 					"based_on_id": "b0a1b761-1310-4165-98c8-56a66f2e9c84",
 					"based_on_hash": "OnBAw5T1FtRv6ZZ4ihvLkB5/QgVHSz2smbX+nCcoeLg",
 					"name": "Sense of Duty",
@@ -552,7 +712,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "9efe7550-9bec-4e27-9694-a58acd0477a4",
+							"id": "b3958da4-f3bf-4808-87b3-4afa4e42fd14",
 							"based_on_id": "854414f8-1b07-4dff-b75f-51873863b9e4",
 							"based_on_hash": "o/4vSJFPqobERnf4hdoYZxbGXE3qqeA5fsTAjSz9h0I",
 							"disabled": true,
@@ -565,7 +725,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "4eece746-2d89-4bd1-8f3e-0a609b8e774e",
+							"id": "cb0df2a7-5ebb-4b77-abe2-ede96006c55b",
 							"based_on_id": "3c2577de-d822-4e0b-86de-8d102e7307fd",
 							"based_on_hash": "ePHkEWVd+P+3QsENyiby4mFMCqHMN0EGINKlWgg6Lp4",
 							"disabled": true,
@@ -578,7 +738,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "3410c2d2-bbf9-4575-bc4c-1699db752782",
+							"id": "10713915-4405-48e0-a4b9-c42517fa1184",
 							"based_on_id": "88455ea4-29a7-4f14-ad24-987992185b31",
 							"based_on_hash": "cze/0aFCBkx5E4yGYEOxmw5AHIksSZc4K4ebMkABX9I",
 							"disabled": true,
@@ -591,7 +751,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "ccff149e-490e-45aa-868c-26336197dc5c",
+							"id": "677911b5-b969-49d1-88ef-ce42b4d43abd",
 							"based_on_id": "af783f0f-216f-43a4-aa6f-4540fbd54bf6",
 							"based_on_hash": "Wg2MdKlg9lx3uO4tOC5+gr9Kn7uNCHzOLjzFFPREywc",
 							"name": "Clan",
@@ -603,7 +763,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "534a398f-e347-4c96-9037-b2d975535215",
+							"id": "55cb07b6-fe8a-42e6-94de-0d59c6e17c5c",
 							"based_on_id": "d272012d-cf26-43a5-833b-003c052800fe",
 							"based_on_hash": "Uvnxi36vCQpmsoUnULy+TRunVZyduIm9xsxilXO/FVk",
 							"disabled": true,
@@ -616,7 +776,7 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "a62f97ea-83dd-4270-a7eb-1eac961d1af4",
+							"id": "590faaa6-7ad5-4f67-838a-b6d5fd572f84",
 							"based_on_id": "c9ad3cee-9a96-41e8-8e09-2b9925f2f621",
 							"based_on_hash": "xoyUqmcOAe2V9BO6rna30x26rISBLxtpaBqeEXWlkMA",
 							"disabled": true,
@@ -635,7 +795,7 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "d23c3ace-a359-4fd5-ba28-20de9b132ae2",
+					"id": "c3b68c81-d813-49ee-af2f-9a28f025d15f",
 					"based_on_id": "364cc0b3-8b74-42b5-8168-d8b02bdd0229",
 					"based_on_hash": "W7MtdB/ny9wAgJKSJDeEuuLcl/EkwJzbf5jSTmrT2tE",
 					"name": "Sharp Claws",
@@ -707,9 +867,9 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "3904dc30-9608-45d5-a247-30a6cbbeb0f7",
-					"based_on_id": "5cdce59d-886d-4dd1-b387-c260025b9d2c",
-					"based_on_hash": "WkzahbgFSn83K+R3fcHM8eNEykbWaxPrqKUvBihbrrM",
+					"id": "c784c9da-9521-4886-bf18-3e042eabc8f0",
+					"based_on_id": "3904dc30-9608-45d5-a247-30a6cbbeb0f7",
+					"based_on_hash": "pIpFDvlFzb7xNo0GKRZXHPBuu1BLe2r7LOGHJCFUShM",
 					"name": "Temperature Tolerance",
 					"physical": true,
 					"levels": "4",
@@ -723,9 +883,9 @@
 				{
 					"type": "advantage",
 					"version": 1,
-					"id": "da9235c1-3b03-41b1-b213-341d0586066e",
-					"based_on_id": "09cc3de9-5393-44f4-8b92-cf9fbf3bbbc0",
-					"based_on_hash": "k1+uyBcb3wm7h5M/48prW4Y+Z473VqpPB+AQJ3RNb/E",
+					"id": "4811db6d-555a-4add-9e6c-e200274bc8d5",
+					"based_on_id": "da9235c1-3b03-41b1-b213-341d0586066e",
+					"based_on_hash": "uQewTC9tXKjUnCnTtuCvQDu039hGrvKAN4DkTDWUQPU",
 					"name": "Terrain Adaptation (Sand)",
 					"physical": true,
 					"exotic": true,
@@ -734,9 +894,9 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "b1e9d300-72e7-475c-94c0-af50bc592a74",
-							"based_on_id": "a26b8064-b9c8-4865-b348-2922c32c9fd9",
-							"based_on_hash": "QnJ+sDS5OXYwodKbhqB69QoDqkZzglOAHTcn4cTPppQ",
+							"id": "bdefa681-9e1a-4cef-94e2-d9a858805f0d",
+							"based_on_id": "b1e9d300-72e7-475c-94c0-af50bc592a74",
+							"based_on_hash": "xILOOFuk29NTjlcX7udN8r4wTtpfmREdT4CgWMP2pr8",
 							"disabled": true,
 							"name": "Unstable on solid ground",
 							"reference": "B93",
@@ -747,9 +907,9 @@
 						{
 							"type": "modifier",
 							"version": 1,
-							"id": "b023ec00-ddb9-40ac-a404-b5560ecea857",
-							"based_on_id": "4544c6f4-9f1e-431c-8164-147646ce1751",
-							"based_on_hash": "bZ34JNplYsJMTopxHCQJM14edHVPM0AoZIRlcmvZkYM",
+							"id": "2c099cfc-da3c-4709-8ea9-1b3be72e465e",
+							"based_on_id": "b023ec00-ddb9-40ac-a404-b5560ecea857",
+							"based_on_hash": "391Vpdz4f0zPNHYLQtDb2VLorGa3dF/V34WWuCvReU8",
 							"disabled": true,
 							"name": "Active",
 							"reference": "P84",
@@ -759,112 +919,6 @@
 						}
 					],
 					"reference": "B93",
-					"categories": [
-						"Advantage"
-					]
-				},
-				{
-					"type": "advantage",
-					"version": 1,
-					"id": "c1e21c1a-8df2-452d-bf4f-379918e9722a",
-					"based_on_id": "b6a3549e-9846-4804-a154-333ca65db098",
-					"based_on_hash": "vUzz6PJMBio8illnPsmpD/nUkv6dqW2EYNCGXh4klaA",
-					"name": "Unaging",
-					"physical": true,
-					"exotic": true,
-					"base_points": 15,
-					"modifiers": [
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "152af353-edaf-4749-a7c9-fbe78da493c1",
-							"based_on_id": "5c3b8700-b801-4087-8a9c-caa0246557a1",
-							"based_on_hash": "sWfMqcUTtVDgcfyg0ICNgdoXnDMXbn3WT2spHTN5Tx8",
-							"disabled": true,
-							"name": "Age Control",
-							"reference": "B95",
-							"cost_type": "percentage",
-							"cost": 20,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "81d3d7d0-d461-49aa-ae5a-986645879353",
-							"based_on_id": "ce8ed521-3968-4847-b6a8-044827d39fb4",
-							"based_on_hash": "QflLC3nEaee/GxEpfT8eWtno42/IunpZyRn1ZmhHI/A",
-							"disabled": true,
-							"name": "IQ Only",
-							"reference": "RSWL24",
-							"cost_type": "percentage",
-							"cost": -75,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "49dfdbb2-f9cf-4b33-865f-fa7913fcc6ef",
-							"based_on_id": "5ac97191-94b0-4f6b-b5fd-f2cd33120771",
-							"based_on_hash": "uw6R2ig2M8ZF9fZ82s1BKqWlkuxN4ZCyJAG371CSRf8",
-							"disabled": true,
-							"name": "Halt Aging, Weekly",
-							"reference": "PSI18",
-							"cost_type": "percentage",
-							"cost": 80,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "c42fb9fc-0ae0-429a-8be4-429ab75ea80d",
-							"based_on_id": "48c80c49-480d-4c74-b4ff-04b79587b49d",
-							"based_on_hash": "Ufkm47kDrzNDAi+++4JRLCBkSUoZAVlYaklneZL28cg",
-							"disabled": true,
-							"name": "Halt Aging, Monthly",
-							"reference": "PSI18",
-							"cost_type": "percentage",
-							"cost": 100,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "9634e9ca-d11a-4076-9fe5-d38f29fde37a",
-							"based_on_id": "1d3cb5ec-aa5e-4c29-8019-65fa6111438e",
-							"based_on_hash": "XxM3KGDO8p8Ee6QdA5uslX24inudBwXv0oe3JM+16nQ",
-							"disabled": true,
-							"name": "Halt Aging, Yearly",
-							"reference": "PSI18",
-							"cost_type": "percentage",
-							"cost": 130,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "f42d0315-fde7-46b2-84b0-4197534727df",
-							"based_on_id": "1df9cf79-8059-4b44-a517-b346c93563ff",
-							"based_on_hash": "wIakYYDlZqMqAaJppPR9i9lAgjTG5HX2rB6jrzuX4Mg",
-							"disabled": true,
-							"name": "Life Extension",
-							"reference": "PSI18",
-							"cost_type": "percentage",
-							"cost": -30,
-							"affects": "total"
-						},
-						{
-							"type": "modifier",
-							"version": 1,
-							"id": "3124e255-ddcb-4b62-bcb5-39848715470c",
-							"name": "RPK Rules ",
-							"cost_type": "percentage",
-							"cost": -67,
-							"affects": "total",
-							"notes": "http://www.mygurps.com/index.php?n=Main.GURPSHouseRules"
-						}
-					],
-					"reference": "B95",
-					"notes": "They aren't exactly unaging, but they're pretty close.  ",
 					"categories": [
 						"Advantage"
 					]
