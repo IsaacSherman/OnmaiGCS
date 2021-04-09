@@ -32,5 +32,6 @@ Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.exe
 Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.deps.json
 Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.runtimeconfig.json
 Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.runtimeconfig.dev.json
-Tools/RollingSim/obj/*
-Tools/RollingSim/bin/*
+Tools/*/obj/*
+Tools/*/bin/*
+*.v2
