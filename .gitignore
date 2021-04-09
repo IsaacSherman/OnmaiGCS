@@ -24,3 +24,13 @@ $RECYCLE.BIN/
 Reya Reilasdottir.gcs
 Characters/Laila Reilasdottir.gcs
 Reya Reilasdottir.pdf
+*.dll
+Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.exe
+*.pdb
+*.cache
+*.exe
+Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.deps.json
+Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.runtimeconfig.json
+Tools/RollingSim/bin/Debug/netcoreapp3.1/RollingSim.runtimeconfig.dev.json
+Tools/RollingSim/obj/*
+Tools/RollingSim/bin/*
