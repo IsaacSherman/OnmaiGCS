@@ -10,7 +10,7 @@
 			"based_on_id": "6513ae24-b995-438b-89e1-aa17f2af6fbe",
 			"based_on_hash": "bTsXkrTNkJMga426OiTa32sYbZaY2XCBStZgfviBhCw",
 			"name": "Magari",
-			"open": true,
+			"open": false,
 			"children": [
 				{
 					"type": "advantage_container",

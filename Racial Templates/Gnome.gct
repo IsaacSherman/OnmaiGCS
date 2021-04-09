@@ -366,9 +366,9 @@
 					"based_on_hash": "/lVQEa7yj+y6MsxxLUu43JGcyyNJlPsV6AzAXzJnTPE",
 					"name": "Sense of Duty",
 					"mental": true,
-					"base_points": -15,
+					"base_points": -10,
 					"reference": "B153",
-					"notes": "Nature",
+					"notes": "Dwarves and their Secrets",
 					"categories": [
 						"Disadvantage"
 					]

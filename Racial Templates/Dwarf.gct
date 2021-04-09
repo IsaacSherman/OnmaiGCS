@@ -8,7 +8,7 @@
 			"version": 1,
 			"id": "166099d7-a3bb-4930-af75-a0ee23334e92",
 			"name": "Dwarf",
-			"open": true,
+			"open": false,
 			"children": [
 				{
 					"type": "advantage_container",

@@ -1,0 +1,108 @@
+﻿<Window x:Class="StatRoller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StatRoller"
+        mc:Ignorable="d"
+        Title="MainWindow">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="Source" Padding="1"/>
+            <ComboBox x:Name="source" ToolTip ="source" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Roll"/>
+            <Button Content="Tags"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="                          Stat" FontSize="8"/>
+            <Label Content="1st Derived" FontSize="8"/>
+            <Label Content="2nd Derived" FontSize="8"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="ST:" Padding="1,3,1,1" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial Black" Width="30" >
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF0B9731" Offset="0.313"/>
+                        <GradientStop Color="#FFC3C3C3" Offset="0.613"/>
+                        <GradientStop Color="#FF3E4378" Offset="0.673"/>
+                        <GradientStop Color="#FF939393" Offset="0.26"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox x:Name="Strength" ToolTip ="Strength" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="SwDmg" ToolTip ="SwDmg" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="ThrDmg" ToolTip ="ThrDmg" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="DX:" Padding="1,3,1,1" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial Black" Width="30" >
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF0B9731" Offset="0.313"/>
+                        <GradientStop Color="#FFC3C3C3" Offset="0.613"/>
+                        <GradientStop Color="#FF3E4378" Offset="0.673"/>
+                        <GradientStop Color="#FF939393" Offset="0.26"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox x:Name="DX" ToolTip ="DX" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="Speed" ToolTip ="Speed" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="Move" ToolTip ="BasicMove" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="IQ:" Padding="1,3,1,1" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial Black" Width="30" >
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF0B9731" Offset="0.313"/>
+                        <GradientStop Color="#FFC3C3C3" Offset="0.613"/>
+                        <GradientStop Color="#FF3E4378" Offset="0.673"/>
+                        <GradientStop Color="#FF939393" Offset="0.26"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox x:Name="IQ" ToolTip ="IQ" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="Dodge" ToolTip ="Dodge" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="Parry" ToolTip ="Parry" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="HT:" Padding="1,3,1,1" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial Black" Width="30" >
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF0B9731" Offset="0.313"/>
+                        <GradientStop Color="#FFC3C3C3" Offset="0.613"/>
+                        <GradientStop Color="#FF3E4378" Offset="0.673"/>
+                        <GradientStop Color="#FF939393" Offset="0.26"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox x:Name="HT" ToolTip ="HT" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="FP" ToolTip ="FP" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="HP" ToolTip ="HP" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="DR:" Padding="1,3,1,1" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial Black" Width="30" >
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                        <GradientStop Color="#FF0B9731" Offset="0.313"/>
+                        <GradientStop Color="#FFC3C3C3" Offset="0.613"/>
+                        <GradientStop Color="#FF3E4378" Offset="0.673"/>
+                        <GradientStop Color="#FF939393" Offset="0.26"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <TextBox x:Name="Weight" ToolTip ="Weight" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="SM" ToolTip ="SM" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+            <TextBox x:Name="Size" ToolTip ="Size" HorizontalAlignment="Left"  Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="51"/>
+        </StackPanel>
+        <Button Content="Copy"/>
+    </StackPanel>
+</Window>

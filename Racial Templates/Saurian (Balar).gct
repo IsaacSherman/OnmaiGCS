@@ -9,8 +9,8 @@
 			"id": "6513ae24-b995-438b-89e1-aa17f2af6fbe",
 			"based_on_id": "c59e0575-50a5-4330-997b-8cca02c7a476",
 			"based_on_hash": "6hrTRnoGKk3KheurcCnpw9/4Casjn+uSERnEKK8pK7k",
-			"name": "Balor",
-			"open": true,
+			"name": "Balar",
+			"open": false,
 			"children": [
 				{
 					"type": "advantage_container",

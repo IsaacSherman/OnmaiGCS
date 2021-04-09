@@ -1,0 +1,7 @@
+<root>
+  <Tag Description="Testy stuff" Bonus="1.400" BonusTarget="Move" TagType="StatEnhancing" Operation="Multiply" />
+  <Armor Description="is covered in bony protrusions, moving noticeably more slowly under the weight." Bonus="15.000" BonusTarget="DR" TagType="StatEnhancing" Operation="Add" />
+  <Armor Description="" Bonus="0.500" BonusTarget="Move" TagType="MovementType" Operation="Multiply" />
+  <BodyPlan Description=" 8 limbs around this creature evenly spaced makes it seem at first like a monstrous spider, but would that such a comforting lie could be true.  This beast is always watching you, even in retreat, and quick to punish those who seek to take advantage of an opening." Bonus="1.000" BonusTarget="HP" TagType="Other" Operation="Add" />
+  <Milieu Description=" this creature is hovering in place high above" Bonus="2.000" BonusTarget="Move" TagType="MovementType" Operation="Multiply" />
+</root>

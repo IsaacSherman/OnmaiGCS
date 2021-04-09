@@ -1,0 +1,13 @@
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\bin\Debug\netcoreapp3.1\RollingSim.exe
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\bin\Debug\netcoreapp3.1\RollingSim.deps.json
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\bin\Debug\netcoreapp3.1\RollingSim.runtimeconfig.json
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\bin\Debug\netcoreapp3.1\RollingSim.runtimeconfig.dev.json
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\bin\Debug\netcoreapp3.1\RollingSim.dll
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\bin\Debug\netcoreapp3.1\RollingSim.pdb
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.csprojAssemblyReference.cache
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.AssemblyInfoInputs.cache
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.AssemblyInfo.cs
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.csproj.CoreCompileInputs.cache
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.dll
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.pdb
+C:\Users\Isaac\GCS\User Library\Onmai\Tools\RollingSim\obj\Debug\netcoreapp3.1\RollingSim.genruntimeconfig.cache
