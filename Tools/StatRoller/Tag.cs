@@ -5,195 +5,21 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Windows.Automation;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Xml;
 
 namespace StatRoller
 {
-	public class Tag : ITag, IXmlStorable
+	public class Tag : ITag, IXmlStorable, ICloneable
 	{
 		protected virtual string NodeName()
 		{
 			return "Tag";
 		}
 
-		#region Armors
-
-		public static Armor[] BoneArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is covered in bony protrusions, moving noticeably more slowly under the weight.",
-				Bonus = 15,
-				TagType = TagType.StatEnhancing,
-				Operation = SupportedOperations.Add,
-				BonusTarget = "DR",
-				Difficulty = 15,
-			},
-			new Armor()
-			{
-				//This part decreases the movement speed
-				Description = "",
-				Bonus = .50f,
-				TagType = TagType.MovementType,
-				BonusTarget = "BasicMove",
-				Operation = SupportedOperations.Multiply,
-				Difficulty = -5
-			}
-			//You might also do some editing of DamageResistances with additional tags
-		};
-		public static Armor[] ChitinArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is covered in weirdly shiny black material, it reminds you of the stuff that protects beetles",
-				Bonus = 8,
-				TagType = TagType.StatEnhancing,
-				Operation = SupportedOperations.Add,
-				BonusTarget = "DR",
-				Difficulty = 8
-			},
-			new Armor()
-			{
-				//This part decreases the movement speed
-				Description = "",
-				Bonus = .90f,
-				TagType = TagType.MovementType,
-				BonusTarget = "BasicMove",
-				Operation = SupportedOperations.Multiply,
-				Difficulty = -1
-			}
-			//You might also do some editing of DamageResistances
-		};
-		public static Armor[] HideArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is almost swimming in extra hide- except that anywhere it would chafe has been rubbed smooth by the relentless search for flesh",
-				Bonus = 6,
-				TagType = TagType.StatEnhancing,
-				Operation = SupportedOperations.Add,
-				BonusTarget = "DR",
-				Difficulty = 6
-			},
-			//You might also do some editing of DamageResistances
-		};
-		public static Armor[] ScaleArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is covered greenish plates, they're similar to the scales of Saurians... but much larger",
-				Bonus = 8,
-				TagType = TagType.StatEnhancing,
-				Operation = SupportedOperations.Add,
-				BonusTarget = "DR",
-				Difficulty = 8
-			},
-			new Armor()
-			{
-				//This part decreases the movement speed
-				Description = "",
-				Bonus = .90f,
-				TagType = TagType.MovementType,
-				BonusTarget = "BasicMove",
-				Operation = SupportedOperations.Multiply,
-				Difficulty = -1
-			}
-			//You might also do some editing of DamageResistances
-		};
-		public static Armor[] MucusArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is always shiny, like a water creature it seems to be bringing its moisture with it",
-				Bonus = -3,
-				TagType = TagType.StatEnhancing,
-				Operation = SupportedOperations.Add,
-				BonusTarget = "DR",
-				Difficulty = -3
-			},
-			new Armor()
-			{
-				//This part decreases the movement speed
-				Description = "",
-				Bonus = 1.25f,
-				TagType = TagType.MovementType,
-				Operation = SupportedOperations.Multiply,
-
-				BonusTarget = "BasicMove",
-				Difficulty = 3
-			}
-			//You might also do some editing of DamageResistances
-		};
-		public static Armor[] FurArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is covered in a thick layer of fur... it's probably really soft!  Pity you won't know for sure until after it's dead...",
-				Bonus = 3,
-				TagType = TagType.StatEnhancing,
-				Operation = SupportedOperations.Add,
-				BonusTarget = "DR",
-				Difficulty = 3
-
-			},
-			new Armor()
-			{
-				//This part decreases the movement speed
-				Description = "",
-				Bonus = .90f,
-				TagType = TagType.MovementType,
-				BonusTarget = "BasicMove",
-				Operation = SupportedOperations.Multiply,
-				Difficulty = -1
-			}
-			//You might also do some editing of DamageResistances
-		};
-		public static Armor[] FeatherArmor =
-		{
-			new Armor()
-			{
-				//This is the part that enhances DR
-				Description = "is covered in dense plumage, in a dazzling array of colors",
-				Bonus = -1,
-				TagType = TagType.StatEnhancing,
-				BonusTarget = "DR",
-				Operation = SupportedOperations.Add,
-				Difficulty = -1
-			},
-			new Armor()
-			{
-				//This part decreases the movement speed
-				Description = "",
-				Bonus = 1.50f,
-				TagType = TagType.MovementType,
-				BonusTarget = "BasicMove",
-				Operation = SupportedOperations.Multiply,
-				Difficulty = 5
-			}
-			//You might also do some editing of DamageResistances
-		};
-		#endregion
-
-		#region Body Plans
-
-		public static BodyPlan[] BodyPlans;
-
-
-		#endregion
-
-		#region Milieux
-
-		public static Milieu[] Milieux;
-
-		#endregion
+		public static HashSet<AttackTag> AttackTags = new HashSet<AttackTag>();
 
 
 		public string Description { get; set; }
@@ -220,7 +46,7 @@ namespace StatRoller
 
 		public void SaveXml(XmlElement sink)
 		{
-			var el =sink.OwnerDocument.CreateElement(NodeName());
+			var el = sink.OwnerDocument.CreateElement(NodeName());
 			sink.AppendChild(el);
 			TranscribeAttributes(el);
 		}
@@ -229,10 +55,41 @@ namespace StatRoller
 		{
 			HelperFunctions.ParseAttributes(source, GetType(), this);
 		}
+
+		protected virtual void Copy(Tag from, Tag to)
+		{
+			to.Description = new string(from.Description);
+			to.Bonus = from.Bonus;
+			to.BonusTarget = new string(from.BonusTarget);
+			to.TagType = from.TagType;
+			to.Operation = from.Operation;
+			to.Difficulty = from.Difficulty;
+		}
+
+		public virtual object Clone()
+		{
+			Tag clone = new Tag();
+			Copy(this, clone);
+			return clone;
+		}
 	}
 
 	public class Armor : Tag
 	{
+		/// <summary>
+		/// Armorses are a special case- they have multiple tags associated, so they need to get monitored... differently
+		/// </summary>
+		public static List<Armor[]> Armorses = new List<Armor[]>
+		{
+			BeastFactory.BoneArmor,
+			BeastFactory.ChitinArmor,
+			BeastFactory.HideArmor,
+			BeastFactory.ScaleArmor,
+			BeastFactory.MucusArmor,
+			BeastFactory.FurArmor,
+			BeastFactory.FeatherArmor,
+		};
+
 		protected override string NodeName()
 		{
 			return "Armor";
@@ -241,6 +98,29 @@ namespace StatRoller
 
 	public class BodyPlan : Tag
 	{
+		public int Limbs { get; set; }
+		public int LimbLength { get; set; }
+
+		protected override void Copy(Tag @from, Tag to)
+		{
+			if (@from is BodyPlan frm && to is BodyPlan t)
+			{
+				t.LimbLength = frm.LimbLength;
+				t.Limbs = frm.Limbs;
+				t.HasRadialSymmetry = frm.HasRadialSymmetry;
+			}
+
+			base.Copy(@from, to);
+		}
+
+		public override object Clone()
+		{
+			BodyPlan clone = new BodyPlan();
+
+			this.Copy(this, clone);
+			return clone;
+		}
+
 		protected override string NodeName()
 		{
 			return "BodyPlan";
@@ -254,7 +134,7 @@ namespace StatRoller
 			new Tag()
 			{
 				Bonus = 0,
-				BonusTarget = "DR",
+				BonusTarget = "BonusDR",
 				Description = " can't be sneaked up on, flanked, or back-stabbed",
 				Difficulty = 10,
 				TagType = TagType.DefensiveState,
@@ -263,7 +143,7 @@ namespace StatRoller
 			{
 				Bonus = 0,
 				Description = " doesn't have off-sides, can attack any direction at any time without penalty",
-				BonusTarget = "DR",
+				BonusTarget = "BonusDR",
 				Difficulty = 5,
 				TagType = TagType.OffensiveState,
 			},
@@ -281,6 +161,8 @@ namespace StatRoller
 					TagType = TagType.Other,
 					BonusTarget = "MoveMultiplier",
 					Difficulty = 0,
+					Limbs = i * 2,
+					LimbLength = (int)Math.Floor(App.rng.Next(2, 6) / 2f),
 				};
 				string description = "";
 				switch (i)
@@ -331,9 +213,11 @@ namespace StatRoller
 				{
 					Bonus = (int)(Math.Ceiling(i / 4.0f) - 1),
 					TagType = TagType.Other,
-					BonusTarget = "HP",
+					BonusTarget = "BonusHP",
 					Difficulty = (int)(Math.Ceiling(i / 4.0f) - 1),
 					HasRadialSymmetry = true,
+					Limbs = i,
+					LimbLength = App.rng.Next(1, 4),
 				};
 				string description = "";
 				switch (i)
@@ -364,17 +248,23 @@ namespace StatRoller
 				plan.Description = description;
 				bodyPlans.Add(plan);
 			}
-			BodyPlans = bodyPlans.ToArray();
+
+			BeastFactory.BodyPlans = bodyPlans.ToArray();
 
 		}
+
 	}
 
 	public class Milieu : Tag
 	{
+
+		public bool CanTrample { get; set; } 
 		protected override string NodeName()
 		{
 			return "Milieu";
 		}
+
+
 
 		static Milieu()
 		{
@@ -383,7 +273,7 @@ namespace StatRoller
 			{
 				Milieu m = new Milieu()
 				{
-					BonusTarget = "BasicMove",
+					BonusTarget = "BonusMove",
 					TagType = TagType.MovementType,
 					Operation = SupportedOperations.Multiply,
 					Bonus = 1f,
@@ -395,11 +285,14 @@ namespace StatRoller
 					case 0: //Underground
 						description =
 							" the creature is covered in debris, it looks like it can burrow as easily as it can walk";
+						m.CanTrample = true;
 						break;
 					case 1: //Terrestrial
 						description =
 							" this beast seems to have a good physique... it's probably a fast runner";
 						m.Bonus = 2f;
+						m.CanTrample = true;
+
 						break;
 					case 2: //Liquid
 						description =
@@ -426,10 +319,184 @@ namespace StatRoller
 				milieux.Add(m);
 			}
 
-			Milieux = milieux.ToArray();
+			BeastFactory.Milieux = milieux.ToArray();
 		}
 
 	}
+
+	public class AttackTag : Tag
+	{
+		/// <summary>
+		/// Modifier to attack type
+		/// </summary>
+		public int Mod { get; set; }
+
+		/// <summary>
+		/// Base damage off thrust, swing, or something else
+		/// </summary>
+		public AttackBases Base { get; set; }
+		/// <summary>
+		/// Not used unless Base is Other
+		/// </summary>
+		public DieString BaseDamage { get; set; }
+		public int RelativeLevel { get; set; }
+		public BaseStat BaseStat { get; set; }
+		public int Reach { get; set; }
+		public int Parry { get; set; }
+		public string AttackName { get; set; }
+		public int AbsoluteLevel { get; set; } = 10;
+		public bool CanParry { get; set; }
+		public DamageType DamageType { get; set; } = DamageType.Crush;
+
+
+		protected override void Copy(Tag @from, Tag to)
+		{
+			if (@from is AttackTag frm && to is AttackTag t)
+			{
+				if (frm.BaseDamage != null)
+				{
+					t.BaseDamage = new DieString(frm.BaseDamage.String);
+				}
+
+				t.RelativeLevel = frm.RelativeLevel;
+				t.BaseStat = frm.BaseStat;
+				t.Reach = frm.Reach;
+				t.Parry = frm.Parry;
+				t.AttackName = frm.AttackName;
+				t.AbsoluteLevel = frm.AbsoluteLevel;
+				t.CanParry = frm.CanParry;
+				t.DamageType = frm.DamageType;
+			}
+
+			base.Copy(@from, to);
+		}
+
+		public override object Clone()
+		{
+			AttackTag clone = new AttackTag();
+
+			this.Copy(this, clone);
+			return clone;
+		}
+
+		public static int ResolveAbsoluteLevel(AttackTag att, Beast beast)
+		{
+			int basic = att.RelativeLevel;
+			switch (att.BaseStat)
+			{
+				case BaseStat.ST:
+					basic += beast.ST;
+					break;
+				case BaseStat.DX:
+					basic += beast.DX;
+					break;
+				case BaseStat.IQ:
+					basic += beast.IQ;
+					break;
+				case BaseStat.HT:
+					basic += beast.HT;
+					break;
+				case BaseStat.Per:
+					basic += beast.Perception;
+					break;
+				case BaseStat.Will:
+					basic += beast.Will;
+					break;
+				case BaseStat.Other:
+					basic = att.AbsoluteLevel;
+					break;
+				default:
+					throw new ArgumentOutOfRangeException();
+			}
+
+			if (att.CanParry)
+			{
+				att.Parry = 3 + basic / 2;
+			}
+			return basic;
+		}
+
+		public static DieString ResolveDamageString(AttackTag att, Beast beast)
+		{
+			DieString dmg;
+			switch (att.Base)
+			{
+				case AttackBases.Thrust:
+					dmg = beast.ThrustDamage.Add(att.Mod);
+					break;
+				case AttackBases.Swing:
+					dmg = beast.SwingDamage.Add(att.Mod);
+					break;
+				case AttackBases.HalfSTThr:
+					dmg = GurpsLookup.Instance.ThrustDamage(beast.ST + att.Mod / 2);
+					att.BaseDamage = dmg;
+					break;				
+				case AttackBases.HalfSTSw:
+					dmg = GurpsLookup.Instance.SwingDamage(beast.ST +att.Mod / 2);
+					att.BaseDamage = dmg;
+					break;
+				case AttackBases.Other:
+					dmg = att.BaseDamage;
+					break;
+				default:
+					throw new ArgumentOutOfRangeException();
+			}
+			return dmg;
+		}
+
+		public static AttackTag BladedStriker = new AttackTag()
+		{
+			RelativeLevel = App.rng.Next(0, 3),
+			DamageType = DamageType.Cut,
+			BaseStat = BaseStat.DX,
+			Base = AttackBases.Thrust,
+			AttackName = "Striker, Bladed",
+			CanParry = true,
+		};
+
+	}
+
+	public class RangedAttackTag : AttackTag
+	{
+		public int HalfRange { get; set; }
+		public int MaxRange { get; set; }
+		public int Accuracy { get; set; }
+		public int Ammo { get; set; }
+		public int RateOfFire { get; set; }
+		public int Shots { get; set; }
+		public int ReloadTime { get; set; }
+		public int Recoil { get; set; }
+
+
+		protected override void Copy(Tag @from, Tag to)
+		{
+			if (@from is RangedAttackTag frm && to is RangedAttackTag t)
+			{
+				t.HalfRange = frm.HalfRange;
+				t.MaxRange = frm.MaxRange;
+				t.Accuracy = frm.Accuracy;
+				t.Ammo = frm.Ammo;
+				t.RateOfFire = frm.RateOfFire;
+				t.Shots = frm.Shots;
+				t.ReloadTime = frm.ReloadTime;
+				t.Recoil = frm.Recoil;
+			}
+			base.Copy(@from, to);
+		}
+
+		public override object Clone()
+		{
+			RangedAttackTag clone = new RangedAttackTag();
+			Copy(this, clone);
+
+
+			return clone;
+		}
+	}
+
+
+
+
 	/// <summary>
 	/// A Tag is a modifier which increases a "stat", adds an attack, adds a defense, alters damage resistance, or does something else (adds burrowing, for instance)
 	/// </summary>
@@ -443,7 +510,6 @@ namespace StatRoller
 		TagType TagType { get; set; }
 		String BonusTarget { get; set; }
 		int Difficulty { get; set; }
-
 	}
 
 	public class TagTester : ITester
@@ -456,23 +522,45 @@ namespace StatRoller
 			Tag t = new Tag()
 			{
 				Bonus = 1.4f,
-				BonusTarget = "BasicMove",
+				BonusTarget = "BonusMove",
 				Operation = SupportedOperations.Multiply,
 				TagType = TagType.StatEnhancing,
 				Description = "Testy stuff",
 			};
 			t.SaveXmlRoot(doc);
-			foreach (Armor armor in Tag.BoneArmor)
+			foreach (Armor armor in BeastFactory.BoneArmor)
 			{
 				armor.SaveXmlRoot(doc);
 			}
 
+			RangedAttackTag tag = new RangedAttackTag
+			{
+				AbsoluteLevel = 12, Accuracy = 13, Ammo = 1, AttackName = "Pewpewpew", BaseStat = BaseStat.DX,
+				Difficulty = 13
+			};
+			var clonetest = tag.Clone() as RangedAttackTag;
+
+			if (!(tag.AbsoluteLevel == clonetest?.AbsoluteLevel &&
+			    tag.Accuracy == clonetest.Accuracy &&
+			    tag.Ammo == clonetest.Ammo &&
+			    tag.AttackName == clonetest.AttackName &&
+			    tag.BaseStat == clonetest.BaseStat &&
+			    tag.Difficulty == clonetest.Difficulty))
+			{
+				return false;
+			}
+		
+				clonetest.AttackName = "KEYKEYKEY";
+				if (tag.AttackName == clonetest.AttackName) {return false;}
+			
+
+
 			BodyPlan b = new BodyPlan();
-			b = Tag.BodyPlans[12];
+			b = BeastFactory.BodyPlans[12];
 			b.SaveXmlRoot(doc);
 
 			Milieu m = new Milieu();
-			m = Tag.Milieux[3];
+			m = BeastFactory.Milieux[3];
 			m.SaveXmlRoot(doc);
 			doc.Save("tagTest.xml");
 			t.LoadXml(doc.DocumentElement.LastChild as XmlElement);

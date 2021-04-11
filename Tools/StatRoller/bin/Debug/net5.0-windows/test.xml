@@ -1,5 +1,5 @@
 <root>
-  <Beast Name="Bob" ST="12" IQ="12" DX="13" HT="14" DR="10" Perception="10" Will="10" Move="7" Speed="12">
+  <Beast Name="Franklefort" BasicST="42" BasicIQ="6" BasicDX="15" BasicHT="15" BasicDR="23" BasicPer="12" BasicWill="11" BasicFP="1" BasicMove="10" BasicSpeed="8" BonusMove=" 0" BonusSpeed="0">
     <DamageResistances>
       <DamageResistance Type="Crush" Amount="1.00" />
       <DamageResistance Type="Cut" Amount="1.00" />
@@ -15,42 +15,9 @@
       <DamageResistance Type="Fatigue" Amount="1.00" />
     </DamageResistances>
     <Tags>
-      <Armor Description="is covered in bony protrusions, moving noticeably more slowly under the weight." Bonus="15.000" BonusTarget="DR" TagType="StatEnhancing" Operation="Add" />
-      <Armor Description="" Bonus="0.500" BonusTarget="Move" TagType="MovementType" Operation="Multiply" />
-      <BodyPlan Description="10 limbs is... too many.  Even motionless, they evoke images of squeezing crowding squirming wriggling dripping in the dark...  Somehow they are always moving closer, even when you think you've finished them off..." Bonus="4.000" BonusTarget="HP" TagType="Other" Operation="Add" />
-      <Milieu Description=" this creature is hovering in place high above" Bonus="2.000" BonusTarget="Move" TagType="MovementType" Operation="Multiply" />
+      <Tag Description=" this beast will always focus on the weakest target.  It determines it with uncanny skill and clarity, and it is strong enough to be one of the most dangerous of the beast types." Bonus="0.000" BonusTarget="" TagType="StatEnhancing" Operation="Add" />
+      <BodyPlan Description="10 limbs is... too many.  Even motionless, they evoke images of squeezing crowding squirming wriggling dripping in the dark...  Somehow they are always moving closer, even when you think you've finished them off..." Bonus="2.000" BonusTarget="MoveMultiplier" TagType="Other" Operation="Add" />
+      <Tag Description=" this creature is hovering in place high above" Bonus="2.000" BonusTarget="BonusMove" TagType="MovementType" Operation="Multiply" />
     </Tags>
-  </Beast>
-  <Beast Name="Frank" ST="12" IQ="12" DX="13" HT="14" DR="10" Perception="10" Will="10" Move="7" Speed="12">
-    <DamageResistances>
-      <DamageResistance Type="Crush" Amount="1.00" />
-      <DamageResistance Type="Cut" Amount="1.00" />
-      <DamageResistance Type="Impale" Amount="1.00" />
-      <DamageResistance Type="SmallPierce" Amount="1.00" />
-      <DamageResistance Type="Pierce" Amount="1.00" />
-      <DamageResistance Type="LargePierce" Amount="1.00" />
-      <DamageResistance Type="HugePierce" Amount="1.00" />
-      <DamageResistance Type="Corrosive" Amount="1.00" />
-      <DamageResistance Type="Burn" Amount="1.00" />
-      <DamageResistance Type="Toxic" Amount="1.00" />
-      <DamageResistance Type="Electric" Amount="1.00" />
-      <DamageResistance Type="Fatigue" Amount="1.00" />
-    </DamageResistances>
-  </Beast>
-  <Beast Name="Same" ST="11" IQ="12" DX="13" HT="14" DR="10" Perception="10" Will="10" Move="7" Speed="12">
-    <DamageResistances>
-      <DamageResistance Type="Crush" Amount="1.00" />
-      <DamageResistance Type="Cut" Amount="1.00" />
-      <DamageResistance Type="Impale" Amount="1.00" />
-      <DamageResistance Type="SmallPierce" Amount="1.00" />
-      <DamageResistance Type="Pierce" Amount="1.00" />
-      <DamageResistance Type="LargePierce" Amount="1.00" />
-      <DamageResistance Type="HugePierce" Amount="1.00" />
-      <DamageResistance Type="Corrosive" Amount="1.00" />
-      <DamageResistance Type="Burn" Amount="1.00" />
-      <DamageResistance Type="Toxic" Amount="1.00" />
-      <DamageResistance Type="Electric" Amount="1.00" />
-      <DamageResistance Type="Fatigue" Amount="1.00" />
-    </DamageResistances>
   </Beast>
 </root>

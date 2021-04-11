@@ -6,6 +6,7 @@ using System.Security.Cryptography.Pkcs;
 using System.Text.RegularExpressions;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Interop;
 using System.Windows.Markup;
 
 namespace StatRoller
@@ -16,9 +17,30 @@ namespace StatRoller
 		private static Regex _isDieString = new Regex("^(\\d*)d(\\d*)(([+-]\\d+)?)$");
 		private static Regex _containsDieString = new Regex("\\d*d\\d*([+-]\\d+)?");
 		private static Random rng = new Random(DateTime.UtcNow.Millisecond);
-		public int NumberOfDice { get; }
-		public int DieSides { get; }
-		public int Modifier { get; }
+
+		public int Difficulty => (int) (3.5f * NumberOfDice + Modifier);
+		public DieString Add(int mod)
+		{
+			DieString ret = new DieString(String);
+			mod += Modifier;
+			while (mod > 3)
+			{
+				ret.NumberOfDice += 1;
+				mod -= 3;
+			}
+
+			ret.Modifier = mod;
+			ret.String = $"{ret.NumberOfDice}d{mod:+0;-#}";
+			return ret;
+		}
+
+		public int NumberOfDice { get; protected set; }
+		public int DieSides { get; protected set; }
+		public int Modifier { get; protected set; }
+		public override string ToString()
+		{
+			return $"{NumberOfDice}d{Modifier:+0;-#}";
+		}
 
 		public DieString(string src)
 		{
@@ -41,6 +63,7 @@ namespace StatRoller
 			}
 			else
 			{
+				if (src == "") src = "Empty String";
 				throw new ArgumentException($"Invalid dice string given: {src}");
 			}
 
@@ -129,7 +152,7 @@ namespace StatRoller
 				catch (ArgumentException)
 				{
 					Debug.WriteLine(
-						$"dieString {str} failed.  This is {(pairs[str].Item1 == 0 ? "" : ("not"))} a good thing.");
+						$"dieString {str} failed.  This is {(pairs[str].Item1 == 0 ? "" : "not")} a good thing.");
 				}
 				catch (Exception)
 				{
@@ -137,8 +160,12 @@ namespace StatRoller
 					return false;
 				}
 
+
 			}
-			return true;
+			DieString d = new DieString("3d+4");
+			DieString d2 = d.Add(4);
+
+			return d2.NumberOfDice == 5 && d2.Modifier == 2;
 		}
 
 		bool ITester.Test()

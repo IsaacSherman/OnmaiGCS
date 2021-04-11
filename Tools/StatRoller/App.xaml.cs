@@ -18,7 +18,10 @@ namespace StatRoller
 			new DieStringTester(),
 			new BeastTester(),
 			new TagTester(),
+			new FactoryTester(),
 		};
+		public static Random rng = new Random();
+
 		private static bool DoTesting = true;
 		static App()
 		{

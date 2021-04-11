@@ -172,6 +172,7 @@ namespace StatRoller
 			string ret = "";
 			switch (st)
 			{
+				case 0: ret = "0d-0"; break;
 				case 1: ret = "1d-5"; break;
 				case 2: ret = "1d-5"; break;
 				case 3: ret = "1d-4"; break;
@@ -212,7 +213,15 @@ namespace StatRoller
 				case 38: ret = "6d+2"; break;
 				case 39: ret = "7d-1"; break;
 				case 40: ret = "7d-1"; break;
+				case 41: ret = "7d-1"; break;
+				case 42: ret = "7d-1"; break;
+				case 43: ret = "7d-1"; break;
+				case 44: ret = "7d-1"; break;
 				case 45: ret = "7d+1"; break;
+				case 46: ret = "7d+1"; break;
+				case 47: ret = "7d+1"; break;
+				case 48: ret = "7d+1"; break;
+				case 49: ret = "7d+1"; break;
 				case 50: ret = "8d-1"; break;
 				case 51: ret = "8d-1"; break;
 				case 52: ret = "8d-1"; break;

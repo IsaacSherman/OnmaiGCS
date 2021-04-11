@@ -14,4 +14,18 @@
 	{
 		Add, Multiply
 	}
+
+	public enum AttackBases
+	{
+		Thrust, Swing,
+		Other,
+		HalfSTThr,
+		HalfSTSw
+	}
+
+	public enum BaseStat
+	{
+		ST, DX, IQ, HT, Per, Will, Other
+	}
+
 }
